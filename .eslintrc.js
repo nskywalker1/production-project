@@ -43,6 +43,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error',
         'jsx-a11y/no-static-element-interactions': 'off',
         'import/extensions': 'off',
+        'no-param-reassign': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
