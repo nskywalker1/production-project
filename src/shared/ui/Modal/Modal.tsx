@@ -60,7 +60,7 @@ export const Modal = ({
 
     return (
         <Portal>
-            <div className={classNames(cls.Modal, mods, [className, theme])}>
+            <div className={classNames(cls.Modal, mods, [className])}>
                 <div onClick={closeHandler} className={cls.overlay}>
                     <div
                         className={cls.content}
