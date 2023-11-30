@@ -47,7 +47,7 @@ module.exports = {
         'jsx-a11y/click-events-have-key-events': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
-        'max-len': ['error', { ignoreComments: true, code: 100 }],
+        'max-len': ['error', { ignoreComments: true, code: 120 }],
         'i18next/no-literal-string': [
             'error',
             {
