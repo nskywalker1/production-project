@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "Назар",
+    "lastname": "Рачківський",
+    "age": 18,
+    "currency": "UAH",
+    "country": "Ukraine",
+    "city": "Kyiv",
+    "username": "admin",
+    "avatar": "https://static.vecteezy.com/system/resources/thumbnails/014/487/751/small/pictogram-hacker-logo-of-cybersecurity-man-working-on-a-computer-security-icon-vector.jpg"
+  }
 }
