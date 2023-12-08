@@ -1,8 +1,15 @@
 :root {
-    --bg-color: #f3f3f3;
-    --inverted-bg-color: #383737;
-    --primary-color: #c4abab;
-    --secondary-color: #656464;
-    --inverted-primary-color: #a29797;
-    --inverted-secondary-color: #736e6e;
+    --bg-color: #f4f8fb;
+    --inverted-bg-color: #147fd0;
+    --primary-color: #159cff;
+    --secondary-color: #57acf0;
+    --inverted-primary-color: #66d6ff;
+    --inverted-secondary-color: #66d6ff;
+
+    // skeleton
+    --skeleton-color: #66d6ff;
+    --skeleton-shadow: #66d6ff;
+
+    // code
+    --code-bg: #fff;
 }
