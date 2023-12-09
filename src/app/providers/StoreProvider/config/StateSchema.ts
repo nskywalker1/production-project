@@ -7,6 +7,7 @@ import { CombinedState } from 'redux';
 import { ProfileSchema } from 'entities/Profile';
 import { AxiosInstance } from 'axios';
 import { ArticleDetailsSchema } from 'entities/Article';
+import { ArticleDetailsCommentsSchema } from 'pages/ArticleDetailsPage';
 
 export interface StateSchema {
     user: UserSchema;
@@ -14,6 +15,7 @@ export interface StateSchema {
     // async reducers
     loginForm?: LoginSchema;
     articleDetails?: ArticleDetailsSchema;
+    articleDetailsComments?: ArticleDetailsCommentsSchema;
     profile?: ProfileSchema;
 }
 
