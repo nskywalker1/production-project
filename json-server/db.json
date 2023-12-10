@@ -97,10 +97,22 @@
       "userId": "1"
     },
     {
-      "id": "4",
-      "text": "nice article",
-      "articleId": 1,
-      "userId": "3"
+      "articleId": "1",
+      "userId": "1",
+      "text": "test",
+      "id": "2RSgH2I"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "nice",
+      "id": "QNDIstZ"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "чудово",
+      "id": "gA0renl"
     }
   ],
   "users": [
@@ -116,24 +128,31 @@
       "username": "user",
       "password": "123",
       "role": "USER",
-      "avatar": "https://cdn-icons-png.flaticon.com/512/219/219983.png"
-    },
-    {
-      "id": "3",
-      "username": "user123",
-      "password": "123",
-      "role": "USER",
-      "avatar": ""
+      "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
     }
   ],
-  "profile": {
-    "first": "Назар",
-    "lastname": "Рачківський",
-    "age": 18,
-    "currency": "EUR",
-    "country": "Germany",
-    "city": "Kyiv",
-    "username": "admin",
-    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsOvAyOK_nlWbb8PpsKvfceKSIuM-QRgJge26rWGTIotKkFBoTwyvmxVp6YJ5OT5Q5q6g&usqp=CAU"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Назар",
+      "lastname": "Рачківський",
+      "age": 18,
+      "currency": "EUR",
+      "country": "Germany",
+      "city": "Kyiv",
+      "username": "admin",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsOvAyOK_nlWbb8PpsKvfceKSIuM-QRgJge26rWGTIotKkFBoTwyvmxVp6YJ5OT5Q5q6g&usqp=CAU"
+    },
+    {
+      "id": "2",
+      "first": "Андрій",
+      "lastname": "Шевченко",
+      "age": 20,
+      "currency": "EUR",
+      "country": "Germany",
+      "city": "Berlin",
+      "username": "user",
+      "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
+    }
+  ]
 }
