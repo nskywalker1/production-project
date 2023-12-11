@@ -21,6 +21,10 @@ const article: Article = {
     subtitle: 'Повний гайд по мові програмування JavaScript',
     img: 'https://blog.logrocket.com/wp-content/uploads/2020/12/javascript-custom-events.png',
     views: 1022,
+    user: {
+        id: '1',
+        username: 'nazar',
+    },
     createdAt: '26.11.2023',
     type: [ArticleType.IT],
     blocks: [
