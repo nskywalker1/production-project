@@ -37,6 +37,7 @@ module.exports = {
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'warn',
+        'linebreak-style': 0,
         'react/function-component-definition': 'off',
         'no-shadow': 'off',
         'react-hooks/rules-of-hooks': 'error',
