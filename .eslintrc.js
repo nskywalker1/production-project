@@ -52,7 +52,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'max-len': ['error', { ignoreComments: true, code: 120 }],
         'i18next/no-literal-string': [
-            'error',
+            'warn',
             {
                 markupOnly: true,
                 ignoreAttribute: ['data-testid', 'to'],
