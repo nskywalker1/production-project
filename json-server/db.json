@@ -231,8 +231,8 @@
           ]
         }
       ]
-    }
-    , {
+    },
+    {
       "id": "10",
       "title": "JavaScript news",
       "subtitle": "Chat GPT та Bard",
@@ -253,8 +253,8 @@
           ]
         }
       ]
-    }
-    , {
+    },
+    {
       "id": "11",
       "title": "Біологія",
       "subtitle": "Chat GPT та Bard",
@@ -275,8 +275,8 @@
           ]
         }
       ]
-    }
-    , {
+    },
+    {
       "id": "12",
       "title": "Штучний інтеллект",
       "subtitle": "Chat GPT та Bard",
@@ -298,8 +298,8 @@
           ]
         }
       ]
-    }
-    , {
+    },
+    {
       "id": "14",
       "title": "Python news",
       "subtitle": "Chat GPT та Bard",
@@ -342,8 +342,8 @@
           ]
         }
       ]
-    }
-    , {
+    },
+    {
       "id": "15",
       "title": "C#",
       "subtitle": "Chat GPT та Bard",
@@ -364,8 +364,8 @@
           ]
         }
       ]
-    }
-    , {
+    },
+    {
       "id": "16",
       "title": "Нова допомога від США ",
       "subtitle": "Chat GPT та Bard",
@@ -386,8 +386,8 @@
           ]
         }
       ]
-    }
-    , {
+    },
+    {
       "id": "17",
       "title": "Штучний інтеллект",
       "subtitle": "Chat GPT та Bard",
@@ -465,6 +465,12 @@
       "userId": "1",
       "text": "Давно хотів вивчити",
       "id": "O4vc1kn"
+    },
+    {
+      "articleId": "10",
+      "userId": "1",
+      "text": "good",
+      "id": "864e7cH"
     }
   ],
   "users": [
