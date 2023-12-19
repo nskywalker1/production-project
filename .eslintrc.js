@@ -22,6 +22,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
+        'nazar-plugin',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -49,6 +50,7 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'no-undef': 'off',
+        'nazar-plugin/path-checker': 'error',
         'react/no-array-index-key': 'off',
         'max-len': ['error', { ignoreComments: true, code: 120 }],
         'i18next/no-literal-string': [

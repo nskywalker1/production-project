@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Loader } from 'shared/ui/Loader/Loader';
+import { Loader } from '../../Loader/Loader';
 import cls from './PageLoader.module.scss';
 
 interface PageLoaderProps {
