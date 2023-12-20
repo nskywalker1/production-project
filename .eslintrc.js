@@ -51,13 +51,14 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'no-undef': 'off',
         'nazar-plugin/path-checker': 'error',
+        'react/jsx-no-useless-fragment': 'off',
         'react/no-array-index-key': 'off',
         'max-len': ['error', { ignoreComments: true, code: 120 }],
         'i18next/no-literal-string': [
             'warn',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to'],
+                ignoreAttribute: ['data-testid', 'to', 'justify', 'target', 'align', 'direction', 'gap'],
             },
         ],
     },
