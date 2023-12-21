@@ -38,7 +38,7 @@ export const CountrySelect = memo((props: CountrySelectProps) => {
             defaultValue={t('Укажіть країну')}
             label={t('Укажіть країну')}
             items={options}
-            direction="top"
+            direction="top right"
         />
     );
 });

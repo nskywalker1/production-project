@@ -13,4 +13,10 @@ export default {
 const Template: ComponentStory<typeof ListBox> = (args) => <ListBox {...args} />;
 
 export const Normal = Template.bind({});
-Normal.args = {};
+Normal.args = {
+    items: [
+        { value: '123', content: 'esda' },
+        { value: '133', content: 'esd1a' },
+        { value: '153', content: 'es2da' },
+    ],
+};
