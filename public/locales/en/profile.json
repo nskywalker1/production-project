@@ -18,5 +18,6 @@
   "Дані не вказані": "Data not specified",
   "Некоректний вік": "Incorrect age",
   "Імя та прізвище обовязкові": "First and last name required",
-  "Укажіть країну": "Select country"
+  "Укажіть країну": "Select country",
+  "Профіль не знайдено": "Profile not found"
 }

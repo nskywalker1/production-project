@@ -471,6 +471,24 @@
       "userId": "1",
       "text": "good",
       "id": "864e7cH"
+    },
+    {
+      "articleId": "4",
+      "userId": "1",
+      "text": "nice",
+      "id": "EgYncCZ"
+    },
+    {
+      "articleId": "4",
+      "userId": "1",
+      "text": "niceee",
+      "id": "0PkLGhH"
+    },
+    {
+      "articleId": "4",
+      "userId": "1",
+      "text": "good",
+      "id": "p03xpri"
     }
   ],
   "users": [
@@ -494,7 +512,7 @@
       "id": "1",
       "first": "Назар",
       "lastname": "Рачківський",
-      "age": 18,
+      "age": 20,
       "currency": "UAH",
       "country": "Ukraine",
       "city": "Kyiv",
