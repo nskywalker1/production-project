@@ -6,9 +6,13 @@ import { ProfilePage } from 'pages/ProfilePage';
 import { ArticlesPage } from 'pages/ArticlesPage';
 import { ArticleDetailsPage } from 'pages/ArticleDetailsPage';
 import { ArticleEditPage } from 'pages/ArticleEditPage';
+import { AdminPanelPage } from 'pages/AdminPanelPage';
+import { UserRole } from 'entities/User/model/types/user';
+import { ForbiddenPage } from 'pages/ForbiddenPage';
 
 export type AppRoutesProps = RouteProps & {
     authOnly?: boolean;
+    roles?: UserRole[]
 }
 
 export enum AppRoutes {
@@ -18,6 +22,8 @@ export enum AppRoutes {
     ARTICLE_DETAILS = 'article_details',
     ARTICLE_CREATE = 'article_create',
     ARTICLE_EDIT = 'article_edit',
+    ADMIN_PANEL = 'admin_panel',
+    FORBIDDEN = 'forbidden',
 
     PROFILE = 'profile',
     NOT_FOUND = 'not_found'
@@ -28,6 +34,8 @@ export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.ABOUT]: '/about',
     [AppRoutes.PROFILE]: '/profile/', // :id
     [AppRoutes.ARTICLES]: '/articles',
+    [AppRoutes.ADMIN_PANEL]: '/admin',
+    [AppRoutes.FORBIDDEN]: '/forbidden',
     [AppRoutes.ARTICLE_EDIT]: '/articles/:id/edit',
     [AppRoutes.ARTICLE_CREATE]: '/articles/create',
     [AppRoutes.ARTICLE_DETAILS]: '/articles/', // :id
@@ -39,6 +47,10 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
     [AppRoutes.MAIN]: {
         path: RoutePath.main,
         element: <MainPage />,
+    },
+    [AppRoutes.FORBIDDEN]: {
+        path: RoutePath.forbidden,
+        element: <ForbiddenPage />,
     },
     [AppRoutes.ABOUT]: {
         path: RoutePath.about,
@@ -53,6 +65,12 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
         path: `${RoutePath.article_details}:id`,
         element: <ArticleDetailsPage />,
         authOnly: true,
+    },
+    [AppRoutes.ADMIN_PANEL]: {
+        path: RoutePath.admin_panel,
+        element: <AdminPanelPage />,
+        authOnly: true,
+        roles: [UserRole.MANAGER, UserRole.ADMIN],
     },
     [AppRoutes.PROFILE]: {
         path: `${RoutePath.profile}:id`,
