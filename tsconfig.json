@@ -13,6 +13,7 @@
     "moduleResolution": "node",
     "strict": true,
     "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
     "esModuleInterop": true
   },
   "ts-node": {
