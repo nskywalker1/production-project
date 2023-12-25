@@ -12,11 +12,11 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 
     const cssLoader = buildCssLoader(isDev);
 
-    const typescriptLoader = {
+    /* const typescriptLoader = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
-    };
+    }; */
 
     const fileLoader = {
         test: /\.(png|jpe?g|gif)$/i,
@@ -27,13 +27,15 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
         ],
     };
 
-    const babelLoader = buildBabelLoader(options);
+    const tsxBabelLoader = buildBabelLoader({ ...options, isTsx: true });
+    const codeBabelLoader = buildBabelLoader({ ...options, isTsx: false });
 
     return [
         fileLoader,
         svgLoader,
-        babelLoader,
-        typescriptLoader,
+        codeBabelLoader,
+        tsxBabelLoader,
+        /*         typescriptLoader, */
         cssLoader,
     ];
 }
