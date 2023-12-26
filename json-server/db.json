@@ -1,14 +1,30 @@
 {
-  "posts": [
+  "notifications":  [
     {
       "id": "1",
-      "title": "json-server",
-      "userId": 1
+      "title": "Сповіщення 1",
+      "description": "Будь яке сповіщення",
+      "userId": "1"
     },
     {
       "id": "2",
-      "title": "json-server",
-      "userId": 2
+      "title": "Сповіщення 2",
+      "description": "Будь яке сповіщення 2",
+      "userId": "1",
+      "href": "http://localhost:3000/admin"
+    },
+    {
+      "id": "3",
+      "title": "Сповіщення 3",
+      "description": "Будь яке сповіщення 3",
+      "userId": "1"
+    },
+    {
+      "id": "4",
+      "title": "Сповіщення 4",
+      "description": "Будь яке сповіщення 4",
+      "userId": "1",
+      "href": "http://localhost:3000/admin"
     }
   ],
   "articles": [
