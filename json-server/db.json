@@ -1,5 +1,5 @@
 {
-  "notifications":  [
+  "notifications": [
     {
       "id": "1",
       "title": "Сповіщення 1",
@@ -564,6 +564,64 @@
       "city": "Berlin",
       "username": "user",
       "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
+    }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Чудова стаття",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 3,
+      "feedback": "Нормально",
+      "userId": "2",
+      "articleId": "2"
+    },
+    {
+      "id": "3",
+      "rate": 5,
+      "feedback": "Найкращий",
+      "userId": "2",
+      "articleId": "1"
+    },
+    {
+      "userId": "1",
+      "articleId": "4",
+      "rate": 4,
+      "feedback": "",
+      "id": "diVuMRn"
+    },
+    {
+      "userId": "1",
+      "articleId": "6",
+      "rate": 1,
+      "feedback": "",
+      "id": "eBSXbTv"
+    },
+    {
+      "userId": "1",
+      "articleId": "3",
+      "rate": 4,
+      "feedback": "Все працює",
+      "id": "Ou0siVJ"
+    },
+    {
+      "userId": "1",
+      "articleId": "10",
+      "rate": 4,
+      "feedback": "Добре",
+      "id": "tsZSlGa"
+    },
+    {
+      "userId": "1",
+      "articleId": "5",
+      "rate": 5,
+      "feedback": "",
+      "id": "BuFco6F"
     }
   ]
 }

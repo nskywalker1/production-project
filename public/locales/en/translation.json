@@ -37,7 +37,11 @@
   "MY APP": "MY APP",
   "Створити статтю": "Create article",
   "Помилка при загрузці статтей": "Error loading articles",
-  "Адмін панель": "Адмін панель",
-  "Ваш відгук": "Ваш відгук",
-  "Закрити": "Закрити"
+  "Адмін панель": "Admin panel",
+  "Ваш відгук": "Your feedback",
+  "Закрити": "Close",
+  "Оцініть статтю": "Rate the article",
+  "Залиште свій відгук про статтю, це допоможе поліпшити якість": "Leave your feedback on the article, it will help improve the quality",
+  "Дякую за оцінку": "Thank you for your feedback",
+  "Дякую за оцінку!": "Thank you for your feedback!"
 }
