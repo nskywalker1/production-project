@@ -51,7 +51,13 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'no-undef': 'off',
         'nazar-plugin/path-checker': ['error', { alias: '@' }],
-        'nazar-plugin/public-api-imports': ['error', { alias: '@' }],
+        'nazar-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
         'react/jsx-no-useless-fragment': 'off',
         'react/no-array-index-key': 'off',
         'max-len': ['error', { ignoreComments: true, code: 120 }],

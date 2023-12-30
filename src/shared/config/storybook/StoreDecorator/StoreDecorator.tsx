@@ -1,17 +1,11 @@
 import { Story } from '@storybook/react';
-// TODO
 import { StateSchema, StoreProvider } from '@/app/providers/StoreProvider';
-// eslint-disable-next-line nazar-plugin/public-api-imports
-import { loginReducer } from '@/features/AuthByUsername/model/slice/loginSlice';
+import { loginReducer } from '@/features/AuthByUsername/testing';
 import { ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-// eslint-disable-next-line nazar-plugin/public-api-imports
-import { articleDetailsReducer } from '@/entities/Article/model/slice/articleDetailsSlice';
-// eslint-disable-next-line nazar-plugin/public-api-imports
-import { profileReducer } from '@/features/editableProfileCard/model/slice/profileSlice';
-// eslint-disable-next-line nazar-plugin/public-api-imports
-import { articleDetailsPageReducer } from '@/pages/ArticleDetailsPage/model/slice';
-// eslint-disable-next-line nazar-plugin/public-api-imports
-import { addCommentFormReducer } from '@/features/addCommentForm/model/slice/addCommentFormSlice';
+import { articleDetailsReducer } from '@/entities/Article/testing';
+import { profileReducer } from '@/features/editableProfileCard/testing';
+import { articleDetailsPageReducer } from '@/pages/ArticleDetailsPage/testing';
+import { addCommentFormReducer } from '@/features/addCommentForm/testing';
 
 const defaultAsyncReducers: ReducersList = {
     loginForm: loginReducer,
