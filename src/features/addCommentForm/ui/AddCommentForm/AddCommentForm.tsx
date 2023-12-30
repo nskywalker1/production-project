@@ -7,8 +7,14 @@ import { Button, ButtonTheme } from '@/shared/ui/Button';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { HStack } from '@/shared/ui/Stack';
-import { getAddCommentFormError, getAddCommentFormText } from '../../model/selectors/addCommentFormSelectors';
-import { addCommentFormActions, addCommentFormReducer } from '../../model/slice/addCommentFormSlice';
+import {
+    getAddCommentFormError,
+    getAddCommentFormText,
+} from '../../model/selectors/addCommentFormSelectors';
+import {
+    addCommentFormActions,
+    addCommentFormReducer,
+} from '../../model/slice/addCommentFormSlice';
 import cls from './AddCommentForm.module.scss';
 
 export interface AddCommentFormProps {
