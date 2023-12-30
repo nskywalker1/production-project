@@ -47,8 +47,8 @@ export const RatingCard = memo((props: RatingCardProps) => {
 
     const cancelHandle = useCallback(() => {
         setIsModalOpen(false);
-        onAccept?.(starsCount);
-    }, [onAccept, starsCount]);
+        onCancel?.(starsCount);
+    }, [onCancel, starsCount]);
 
     const modalContent = (
         <>
