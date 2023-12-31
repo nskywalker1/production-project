@@ -50,6 +50,13 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'no-undef': 'off',
+        'nazar-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'nazar-plugin/path-checker': ['error', { alias: '@' }],
         'nazar-plugin/public-api-imports': [
             'error',
