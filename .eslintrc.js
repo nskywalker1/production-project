@@ -22,6 +22,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
+        'unused-imports',
         'nazar-plugin',
     ],
     rules: {
@@ -46,6 +47,7 @@ module.exports = {
         'jsx-a11y/no-static-element-interactions': 'off',
         'import/extensions': 'off',
         'no-param-reassign': 'off',
+        'unused-imports/no-unused-imports': 'error',
         'jsx-a11y/click-events-have-key-events': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
