@@ -3,7 +3,7 @@ import { memo } from 'react';
 import { useSelector } from 'react-redux';
 import { ArticleList } from '@/entities/Article';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Text } from '@/shared/ui/Text/Text';
+import { Text } from '@/shared/ui/Text';
 import { getArticles } from '../../model/slice/articlesPageSlice';
 import {
     getArticlesPageError,
