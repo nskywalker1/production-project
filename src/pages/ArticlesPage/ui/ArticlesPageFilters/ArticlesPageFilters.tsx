@@ -5,10 +5,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import {
     ArticleSortField,
     ArticleType,
-    ArticleTypeTabs,
     ArticleView,
-    ArticleViewSelector,
-    ArticleSortSelector,
 } from '@/entities/Article';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Card } from '@/shared/ui/Card';
@@ -25,6 +22,9 @@ import {
     getArticlesPageView,
 } from '../../model/selectors/articlesPageSelectors';
 import cls from './ArticlesPageFilters.module.scss';
+import { ArticleViewSelector } from '@/features/ArticleViewSelector';
+import { ArticleSortSelector } from '@/features/ArticleSortSelector';
+import { ArticleTypeTabs } from '@/features/ArticleTypeTabs';
 
 interface ArticlesPageFiltersProps {
     className?: string;
