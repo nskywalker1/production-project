@@ -540,6 +540,15 @@
         "MANAGER"
       ],
       "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
     }
   ],
   "profile": [
