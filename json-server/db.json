@@ -425,6 +425,123 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "h7PEeHA"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "XpjEkTQ"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "GsvSuLU"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "sSzm5nn"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "DLHO02n"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "PKRoPKe"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "H4rhvwR"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "X5STE9w"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "f73Waxp"
     }
   ],
   "comments": [
@@ -511,6 +628,18 @@
       "userId": "2",
       "text": "все буде добре",
       "id": "Zsw3m8u"
+    },
+    {
+      "articleId": "PKRoPKe",
+      "userId": "4",
+      "text": "text",
+      "id": "uDN4SHe"
+    },
+    {
+      "articleId": "X5STE9w",
+      "userId": "4",
+      "text": "text",
+      "id": "w8Q9-Ic"
     }
   ],
   "users": [
@@ -572,6 +701,17 @@
       "country": "Germany",
       "city": "Berlin",
       "username": "user",
+      "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
+    },
+    {
+      "id": "4",
+      "first": "test",
+      "lastname": "user",
+      "age": 465,
+      "currency": "EUR",
+      "country": "Ukraine",
+      "city": "Kyiv",
+      "username": "testuser",
       "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
     }
   ],
