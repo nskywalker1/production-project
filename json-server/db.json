@@ -594,13 +594,21 @@
             "id": "1",
             "username": "admin",
             "password": "123",
-            "roles": ["ADMIN"],
-            "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+            "roles": [
+                "ADMIN"
+            ],
+            "features": {
+                "isArticleRatingEnabled": true
+            },
+            "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
         },
         {
             "id": "2",
             "username": "user",
             "password": "123",
+            "features": {
+                "isArticleRatingEnabled": false
+            },
             "roles": ["USER"],
             "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
         },
@@ -608,6 +616,9 @@
             "id": "3",
             "username": "manager",
             "password": "123",
+            "features": {
+                "isArticleRatingEnabled": true
+            },
             "roles": ["MANAGER"],
             "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
         },
@@ -616,6 +627,9 @@
             "username": "testuser",
             "password": "123",
             "roles": ["ADMIN"],
+            "features": {
+                "isArticleRatingEnabled": false
+            },
             "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
         }
     ],
