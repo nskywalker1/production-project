@@ -1,21 +1,21 @@
-import { TestAsyncThunk } from '@/shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
-import { Country } from '@/entities/Country';
-import { Currency } from '@/entities/Currency';
-import { updateProfileData } from './updateProfileData';
+import { TestAsyncThunk } from "@/shared/lib/tests/TestAsyncThunk/TestAsyncThunk";
+import { Country } from "@/entities/Country";
+import { Currency } from "@/entities/Currency";
+import { updateProfileData } from "./updateProfileData";
 
 const data = {
-    username: 'admin',
+    username: "admin",
     age: 22,
     country: Country.Ukraine,
     currency: Currency.UAH,
-    city: 'Kyiv',
-    first: 'nazar',
-    lastname: 'nazar',
-    id: '1',
+    city: "Kyiv",
+    first: "nazar",
+    lastname: "nazar",
+    id: "1",
 };
 
-describe('updateProfileData.test', () => {
-    test('success', async () => {
+describe("updateProfileData.test", () => {
+    test("success", async () => {
         const thunk = new TestAsyncThunk(updateProfileData, {
             profile: {
                 form: data,
@@ -26,10 +26,10 @@ describe('updateProfileData.test', () => {
         const result = await thunk.callThunk();
 
         expect(thunk.api.put).toHaveBeenCalled();
-        expect(result.meta.requestStatus).toBe('fulfilled');
+        expect(result.meta.requestStatus).toBe("fulfilled");
         expect(result.payload).toEqual(data);
     });
-    test('error', async () => {
+    test("error", async () => {
         const thunk = new TestAsyncThunk(updateProfileData, {
             profile: {
                 form: data,
@@ -39,6 +39,6 @@ describe('updateProfileData.test', () => {
 
         const result = await thunk.callThunk();
 
-        expect(result.meta.requestStatus).toBe('rejected');
+        expect(result.meta.requestStatus).toBe("rejected");
     });
 });

@@ -1,11 +1,11 @@
 {
-  "id": "1",
-  "first": "test",
-  "lastname": "user",
-  "age": 465,
-  "currency": "EUR",
-  "country": "Ukraine",
-  "city": "Kyiv",
-  "username": "testuser",
-  "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
+    "id": "1",
+    "first": "test",
+    "lastname": "user",
+    "age": 465,
+    "currency": "EUR",
+    "country": "Ukraine",
+    "city": "Kyiv",
+    "username": "testuser",
+    "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
 }

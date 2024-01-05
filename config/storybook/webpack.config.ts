@@ -1,22 +1,22 @@
-import webpack, { DefinePlugin, RuleSetRule } from 'webpack';
-import path from 'path';
-import { BuildPaths } from '../build/types/config';
-import { buildCssLoader } from '../build/loaders/buildCssLoader';
+import webpack, { DefinePlugin, RuleSetRule } from "webpack";
+import path from "path";
+import { BuildPaths } from "../build/types/config";
+import { buildCssLoader } from "../build/loaders/buildCssLoader";
 
-export default ({ config }: {config: webpack.Configuration}) => {
+export default ({ config }: { config: webpack.Configuration }) => {
     const paths: BuildPaths = {
-        entry: '',
-        build: '',
-        html: '',
-        src: path.resolve(__dirname, '..', '..', 'src'),
-        buildLocales: '',
-        locales: '',
+        entry: "",
+        build: "",
+        html: "",
+        src: path.resolve(__dirname, "..", "..", "src"),
+        buildLocales: "",
+        locales: "",
     };
     config!.resolve!.modules!.push(paths.src);
-    config!.resolve!.extensions!.push('.ts', '.tsx');
+    config!.resolve!.extensions!.push(".ts", ".tsx");
     config.resolve!.alias = {
         ...(config.resolve?.alias || {}),
-        '@': paths.src,
+        "@": paths.src,
     };
 
     // eslint-disable-next-line no-param-reassign
@@ -27,14 +27,16 @@ export default ({ config }: {config: webpack.Configuration}) => {
         }
         return rule;
     });
-    config!.plugins!.push(new DefinePlugin({
-        __IS_DEV__: JSON.stringify(true),
-        __API__: JSON.stringify('https://testapi.com'),
-        __PROJECT__: JSON.stringify('storybook'),
-    }));
+    config!.plugins!.push(
+        new DefinePlugin({
+            __IS_DEV__: JSON.stringify(true),
+            __API__: JSON.stringify("https://testapi.com"),
+            __PROJECT__: JSON.stringify("storybook"),
+        }),
+    );
     config!.module!.rules.push({
         test: /\.svg$/,
-        use: ['@svgr/webpack'],
+        use: ["@svgr/webpack"],
     });
     config!.module!.rules.push(buildCssLoader(true));
     return config;

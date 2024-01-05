@@ -1,13 +1,20 @@
-import { createEntityAdapter, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import {
-    Article, ArticleType, ArticleView, ArticleSortField,
-} from '@/entities/Article';
-import { StateSchema } from '@/app/providers/StoreProvider';
-import { ARTICLE_VIEW_LOCALSTORAGE_KEY } from '@/shared/consts/localstorage';
+    createEntityAdapter,
+    createSlice,
+    PayloadAction,
+} from "@reduxjs/toolkit";
+import {
+    Article,
+    ArticleType,
+    ArticleView,
+    ArticleSortField,
+} from "@/entities/Article";
+import { StateSchema } from "@/app/providers/StoreProvider";
+import { ARTICLE_VIEW_LOCALSTORAGE_KEY } from "@/shared/consts/localstorage";
 
-import { SortOrder } from '@/shared/types/sort';
-import { fetchArticlesList } from '../services/fetchArticlesList/fetchArticlesList';
-import { ArticlesPageSchema } from '../types/ArticlePagesSchema';
+import { SortOrder } from "@/shared/types/sort";
+import { fetchArticlesList } from "../services/fetchArticlesList/fetchArticlesList";
+import { ArticlesPageSchema } from "../types/ArticlePagesSchema";
 
 const articlesAdapter = createEntityAdapter<Article>({
     selectId: (article) => article.id,
@@ -18,7 +25,7 @@ export const getArticles = articlesAdapter.getSelectors<StateSchema>(
 );
 
 export const articlesPageSlice = createSlice({
-    name: 'articlesPageSlice',
+    name: "articlesPageSlice",
     initialState: articlesAdapter.getInitialState<ArticlesPageSchema>({
         isLoading: false,
         error: undefined,
@@ -27,8 +34,8 @@ export const articlesPageSlice = createSlice({
         entities: {},
         page: 1,
         limit: 9,
-        order: 'asc',
-        search: '',
+        order: "asc",
+        search: "",
         sort: ArticleSortField.CREATED,
         hasMore: true,
         type: ArticleType.ALL,
@@ -55,7 +62,9 @@ export const articlesPageSlice = createSlice({
             state.sort = action.payload;
         },
         initState: (state) => {
-            const view = localStorage.getItem(ARTICLE_VIEW_LOCALSTORAGE_KEY) as ArticleView;
+            const view = localStorage.getItem(
+                ARTICLE_VIEW_LOCALSTORAGE_KEY,
+            ) as ArticleView;
             state.view = view;
             state.limit = view === ArticleView.BIG ? 4 : 9;
             state._inited = true;

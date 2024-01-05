@@ -1,11 +1,11 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { useTranslation } from 'react-i18next';
-import { AppLink, AppLinkTheme } from '@/shared/ui/AppLink';
-import { classNames } from '@/shared/lib/classNames/classNames';
-import { getUserAuthData } from '@/entities/User';
-import { SidebarItemType } from '../../model/types/sidebar';
-import cls from './Sidebar.module.scss';
+import React from "react";
+import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
+import { AppLink, AppLinkTheme } from "@/shared/ui/AppLink";
+import { classNames } from "@/shared/lib/classNames/classNames";
+import { getUserAuthData } from "@/entities/User";
+import { SidebarItemType } from "../../model/types/sidebar";
+import cls from "./Sidebar.module.scss";
 
 interface SidebarItemProps {
     item: SidebarItemType;
@@ -27,9 +27,7 @@ export const SidebarItem = ({ item, collapsed }: SidebarItemProps) => {
             to={item.path}
         >
             <item.Icon className={cls.icon} />
-            <span className={cls.link}>
-                {t(item.text)}
-            </span>
+            <span className={cls.link}>{t(item.text)}</span>
         </AppLink>
     );
 };

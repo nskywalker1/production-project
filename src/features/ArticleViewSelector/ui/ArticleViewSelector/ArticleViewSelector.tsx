@@ -1,11 +1,11 @@
-import { useTranslation } from 'react-i18next';
-import { classNames } from '@/shared/lib/classNames/classNames';
-import ListIcon from '@/shared/assets/icons/list-24-24.svg';
-import TiledIcon from '@/shared/assets/icons/tiled-24-24.svg';
-import { Button, ButtonTheme } from '@/shared/ui/Button';
-import { Icon } from '@/shared/ui/Icon';
-import cls from './ArticleViewSelector.module.scss';
-import { ArticleView } from '@/entities/Article';
+import { useTranslation } from "react-i18next";
+import { classNames } from "@/shared/lib/classNames/classNames";
+import ListIcon from "@/shared/assets/icons/list-24-24.svg";
+import TiledIcon from "@/shared/assets/icons/tiled-24-24.svg";
+import { Button, ButtonTheme } from "@/shared/ui/Button";
+import { Icon } from "@/shared/ui/Icon";
+import cls from "./ArticleViewSelector.module.scss";
+import { ArticleView } from "@/entities/Article";
 
 interface ArticleViewSelectorProps {
     className?: string;
@@ -41,7 +41,9 @@ export const ArticleViewSelector = (props: ArticleViewSelectorProps) => {
                     onClick={onClick(viewType.view)}
                 >
                     <Icon
-                        className={classNames('', { [cls.notSelected]: viewType.view !== view })}
+                        className={classNames("", {
+                            [cls.notSelected]: viewType.view !== view,
+                        })}
                         Svg={viewType.icon}
                     />
                 </Button>

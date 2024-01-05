@@ -1,13 +1,16 @@
-import { useTranslation } from 'react-i18next';
-import React, { memo, useCallback } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { classNames } from '@/shared/lib/classNames/classNames';
-import { Avatar } from '@/shared/ui/Avatar';
-import { Dropdown } from '@/shared/ui/Popups';
+import { useTranslation } from "react-i18next";
+import React, { memo, useCallback } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { classNames } from "@/shared/lib/classNames/classNames";
+import { Avatar } from "@/shared/ui/Avatar";
+import { Dropdown } from "@/shared/ui/Popups";
 import {
-    getUserAuthData, isUserAdmin, isUserManager, userActions,
-} from '@/entities/User';
-import { getRouteAdmin, getRouteProfile } from '@/shared/consts/router';
+    getUserAuthData,
+    isUserAdmin,
+    isUserManager,
+    userActions,
+} from "@/entities/User";
+import { getRouteAdmin, getRouteProfile } from "@/shared/consts/router";
 
 interface AvatarDropdownProps {
     className?: string;
@@ -33,24 +36,29 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
 
     return (
         <Dropdown
-            className={classNames('', {}, [className])}
+            className={classNames("", {}, [className])}
             direction="bottom left"
             items={[
-                ...(isAdminPanelAvailable ? [{
-                    content: t('Адмін панель'),
-                    href: getRouteAdmin(),
-                }] : []),
+                ...(isAdminPanelAvailable
+                    ? [
+                          {
+                              content: t("Адмін панель"),
+                              href: getRouteAdmin(),
+                          },
+                      ]
+                    : []),
                 {
-                    content: t('Профіль'),
+                    content: t("Профіль"),
                     href: getRouteProfile(authData.id),
                 },
                 {
-                    content: t('Вийти'),
+                    content: t("Вийти"),
                     onClick: onLogout,
                 },
             ]}
-            trigger={<Avatar fallbackInverted size={30} src={authData.avatar} />}
+            trigger={
+                <Avatar fallbackInverted size={30} src={authData.avatar} />
+            }
         />
-
     );
 });

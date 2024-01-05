@@ -1,38 +1,38 @@
-import { memo } from 'react';
-import { classNames } from '@/shared/lib/classNames/classNames';
-import cls from './Text.module.scss';
+import { memo } from "react";
+import { classNames } from "@/shared/lib/classNames/classNames";
+import cls from "./Text.module.scss";
 
 export enum TextAlign {
-    RIGHT = 'right',
-    LEFT = 'left',
-    CENTER = 'center'
+    RIGHT = "right",
+    LEFT = "left",
+    CENTER = "center",
 }
 export enum TextTheme {
-    PRIMARY = 'primary',
-    INVERTED = 'inverted',
-    ERROR = 'error'
+    PRIMARY = "primary",
+    INVERTED = "inverted",
+    ERROR = "error",
 }
 
 export enum TextSize {
-    M = 'size_m',
-    L = 'size_l'
+    M = "size_m",
+    L = "size_l",
 }
 
 interface TextProps {
     className?: string;
-    title?:string;
-    text?:string;
+    title?: string;
+    text?: string;
     theme?: TextTheme;
     align?: TextAlign;
     size?: TextSize;
-    'data-testid'?: string
+    "data-testid"?: string;
 }
 
-type HeaderTagType = 'h1' | 'h2';
+type HeaderTagType = "h1" | "h2";
 
 const mapSizeToHeaderTag: Record<TextSize, HeaderTagType> = {
-    [TextSize.M]: 'h2',
-    [TextSize.L]: 'h1',
+    [TextSize.M]: "h2",
+    [TextSize.L]: "h1",
 };
 
 export const Text = memo((props: TextProps) => {
@@ -40,7 +40,7 @@ export const Text = memo((props: TextProps) => {
         className,
         theme = TextTheme.PRIMARY,
         text,
-        'data-testid': dataTestId = 'text',
+        "data-testid": dataTestId = "text",
         size = TextSize.M,
         align = TextAlign.LEFT,
         title,
@@ -49,7 +49,14 @@ export const Text = memo((props: TextProps) => {
     const HeaderTag = mapSizeToHeaderTag[size];
 
     return (
-        <div className={classNames(cls.Text, {}, [className, cls[theme], cls[align], cls[size]])}>
+        <div
+            className={classNames(cls.Text, {}, [
+                className,
+                cls[theme],
+                cls[align],
+                cls[size],
+            ])}
+        >
             {title && (
                 <HeaderTag
                     className={cls.title}
@@ -59,10 +66,7 @@ export const Text = memo((props: TextProps) => {
                 </HeaderTag>
             )}
             {text && (
-                <p
-                    data-testid={`${dataTestId}.paragraph`}
-                    className={cls.text}
-                >
+                <p data-testid={`${dataTestId}.paragraph`} className={cls.text}>
                     {text}
                 </p>
             )}

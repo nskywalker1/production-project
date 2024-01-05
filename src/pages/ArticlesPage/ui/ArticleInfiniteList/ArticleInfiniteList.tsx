@@ -1,16 +1,16 @@
-import { useTranslation } from 'react-i18next';
-import { memo } from 'react';
-import { useSelector } from 'react-redux';
-import { ArticleList } from '@/entities/Article';
-import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Text } from '@/shared/ui/Text';
-import { getArticles } from '../../model/slice/articlesPageSlice';
+import { useTranslation } from "react-i18next";
+import { memo } from "react";
+import { useSelector } from "react-redux";
+import { ArticleList } from "@/entities/Article";
+import { useAppDispatch } from "@/shared/lib/hooks/useAppDispatch/useAppDispatch";
+import { Text } from "@/shared/ui/Text";
+import { getArticles } from "../../model/slice/articlesPageSlice";
 import {
     getArticlesPageError,
     getArticlesPageInited,
     getArticlesPageIsLoading,
     getArticlesPageView,
-} from '../../model/selectors/articlesPageSelectors';
+} from "../../model/selectors/articlesPageSelectors";
 
 interface ArticleInfiniteListProps {
     className?: string;
@@ -28,7 +28,7 @@ export const ArticleInfiniteList = memo((props: ArticleInfiniteListProps) => {
     const error = useSelector(getArticlesPageError);
 
     if (error) {
-        return <Text title={t('Помилка при загрузці статтей')} />;
+        return <Text title={t("Помилка при загрузці статтей")} />;
     }
 
     return (

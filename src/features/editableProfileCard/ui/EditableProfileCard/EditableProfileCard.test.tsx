@@ -1,21 +1,21 @@
-import { screen } from '@testing-library/react';
-import { userEvent } from '@testing-library/user-event';
-import { ComponentRender } from '@/shared/lib/tests/componentRender/ComponentRender';
-import { Profile } from '@/entities/Profile';
-import { Country } from '@/entities/Country';
-import { Currency } from '@/entities/Currency';
-import { profileReducer } from '../../model/slice/profileSlice';
-import { EditableProfileCard } from './EditableProfileCard';
+import { screen } from "@testing-library/react";
+import { userEvent } from "@testing-library/user-event";
+import { ComponentRender } from "@/shared/lib/tests/componentRender/ComponentRender";
+import { Profile } from "@/entities/Profile";
+import { Country } from "@/entities/Country";
+import { Currency } from "@/entities/Currency";
+import { profileReducer } from "../../model/slice/profileSlice";
+import { EditableProfileCard } from "./EditableProfileCard";
 
 const profile: Profile = {
-    id: '1',
-    first: 'admin',
-    lastname: 'admin',
+    id: "1",
+    first: "admin",
+    lastname: "admin",
     age: 18,
     country: Country.Ukraine,
     currency: Currency.UAH,
-    city: 'Kyiv',
-    username: 'admin123',
+    city: "Kyiv",
+    username: "admin123",
 };
 
 const options = {
@@ -26,7 +26,7 @@ const options = {
             form: profile,
         },
         user: {
-            authData: { id: '1', username: 'admin123' },
+            authData: { id: "1", username: "admin123" },
         },
     },
     asyncReducers: {
@@ -34,27 +34,43 @@ const options = {
     },
 };
 
-describe('EditableProfileCard.test.tsx', () => {
-    test('cancel btn test', async () => {
+describe("EditableProfileCard.test.tsx", () => {
+    test("cancel btn test", async () => {
         ComponentRender(<EditableProfileCard id="1" />, options);
-        await userEvent.click(screen.getByTestId('EditableProfileCardHeader.EditButton'));
-        expect(screen.getByTestId('EditableProfileCardHeader.CancelButton')).toBeInTheDocument();
+        await userEvent.click(
+            screen.getByTestId("EditableProfileCardHeader.EditButton"),
+        );
+        expect(
+            screen.getByTestId("EditableProfileCardHeader.CancelButton"),
+        ).toBeInTheDocument();
     });
-    test('the values must be reset when canceling', async () => {
+    test("the values must be reset when canceling", async () => {
         ComponentRender(<EditableProfileCard id="1" />, options);
-        await userEvent.click(screen.getByTestId('EditableProfileCardHeader.EditButton'));
+        await userEvent.click(
+            screen.getByTestId("EditableProfileCardHeader.EditButton"),
+        );
 
-        await userEvent.clear(screen.getByTestId('ProfileCard.firstname'));
-        await userEvent.clear(screen.getByTestId('ProfileCard.lastname'));
+        await userEvent.clear(screen.getByTestId("ProfileCard.firstname"));
+        await userEvent.clear(screen.getByTestId("ProfileCard.lastname"));
 
-        await userEvent.type(screen.getByTestId('ProfileCard.firstname'), 'user');
-        await userEvent.type(screen.getByTestId('ProfileCard.lastname'), 'user');
+        await userEvent.type(
+            screen.getByTestId("ProfileCard.firstname"),
+            "user",
+        );
+        await userEvent.type(
+            screen.getByTestId("ProfileCard.lastname"),
+            "user",
+        );
 
-        expect(screen.getByTestId('ProfileCard.firstname')).toHaveValue('user');
+        expect(screen.getByTestId("ProfileCard.firstname")).toHaveValue("user");
 
-        await userEvent.click(screen.getByTestId('EditableProfileCardHeader.CancelButton'));
+        await userEvent.click(
+            screen.getByTestId("EditableProfileCardHeader.CancelButton"),
+        );
 
-        expect(screen.getByTestId('ProfileCard.firstname')).toHaveValue('admin');
-        expect(screen.getByTestId('ProfileCard.lastname')).toHaveValue('admin');
+        expect(screen.getByTestId("ProfileCard.firstname")).toHaveValue(
+            "admin",
+        );
+        expect(screen.getByTestId("ProfileCard.lastname")).toHaveValue("admin");
     });
 });

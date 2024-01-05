@@ -1,13 +1,13 @@
-import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
-import { Page } from './Page';
+import React from "react";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { StoreDecorator } from "@/shared/config/storybook/StoreDecorator/StoreDecorator";
+import { Page } from "./Page";
 
 export default {
-    title: 'widgets/Page',
+    title: "widgets/Page",
     component: Page,
     argTypes: {
-        backgroundColor: { control: 'color' },
+        backgroundColor: { control: "color" },
     },
 } as ComponentMeta<typeof Page>;
 

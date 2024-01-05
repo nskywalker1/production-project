@@ -1,12 +1,12 @@
-import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Flex } from './Flex';
+import React from "react";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Flex } from "./Flex";
 
 export default {
-    title: 'shared/Flex',
+    title: "shared/Flex",
     component: Flex,
     argTypes: {
-        backgroundColor: { control: 'color' },
+        backgroundColor: { control: "color" },
     },
 } as ComponentMeta<typeof Flex>;
 
@@ -26,7 +26,7 @@ Row.args = {
 
 export const Column = Template.bind({});
 Column.args = {
-    direction: 'column',
+    direction: "column",
     children: (
         <>
             <div>first</div>
@@ -39,8 +39,8 @@ Column.args = {
 
 export const RowGap4 = Template.bind({});
 RowGap4.args = {
-    gap: '4',
-    direction: 'column',
+    gap: "4",
+    direction: "column",
     children: (
         <>
             <div>first</div>
@@ -52,8 +52,8 @@ RowGap4.args = {
 };
 export const RowGap8 = Template.bind({});
 RowGap8.args = {
-    gap: '8',
-    direction: 'column',
+    gap: "8",
+    direction: "column",
     children: (
         <>
             <div>first</div>
@@ -65,8 +65,8 @@ RowGap8.args = {
 };
 export const RowGap16 = Template.bind({});
 RowGap16.args = {
-    gap: '16',
-    direction: 'column',
+    gap: "16",
+    direction: "column",
     children: (
         <>
             <div>first</div>
@@ -78,8 +78,8 @@ RowGap16.args = {
 };
 export const RowGap32 = Template.bind({});
 RowGap32.args = {
-    gap: '32',
-    direction: 'column',
+    gap: "32",
+    direction: "column",
     children: (
         <>
             <div>first</div>

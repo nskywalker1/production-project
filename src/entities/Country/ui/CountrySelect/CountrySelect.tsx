@@ -1,13 +1,13 @@
-import { useTranslation } from 'react-i18next';
-import { memo, useCallback } from 'react';
-import { classNames } from '@/shared/lib/classNames/classNames';
-import { ListBox } from '@/shared/ui/Popups';
-import { Country } from '../../model/types/country';
+import { useTranslation } from "react-i18next";
+import { memo, useCallback } from "react";
+import { classNames } from "@/shared/lib/classNames/classNames";
+import { ListBox } from "@/shared/ui/Popups";
+import { Country } from "../../model/types/country";
 
 interface CountrySelectProps {
     value?: Country;
     className?: string;
-    onChange?: (value: Country) => void
+    onChange?: (value: Country) => void;
     readonly?: boolean;
 }
 
@@ -20,22 +20,23 @@ const options = [
 
 export const CountrySelect = memo((props: CountrySelectProps) => {
     const { t } = useTranslation();
-    const {
-        value, onChange, className, readonly,
-    } = props;
+    const { value, onChange, className, readonly } = props;
 
-    const onChangeHandler = useCallback((value: string) => {
-        onChange?.(value as Country);
-    }, [onChange]);
+    const onChangeHandler = useCallback(
+        (value: string) => {
+            onChange?.(value as Country);
+        },
+        [onChange],
+    );
 
     return (
         <ListBox
             onChange={onChangeHandler}
             value={value}
             readonly={readonly}
-            className={classNames('', {}, [className])}
-            defaultValue={t('Укажіть країну')}
-            label={t('Укажіть країну')}
+            className={classNames("", {}, [className])}
+            defaultValue={t("Укажіть країну")}
+            label={t("Укажіть країну")}
             items={options}
             direction="top right"
         />

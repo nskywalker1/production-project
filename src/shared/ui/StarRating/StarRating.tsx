@@ -1,8 +1,8 @@
-import { memo, useState } from 'react';
-import { classNames } from '@/shared/lib/classNames/classNames';
-import cls from './StarRating.module.scss';
-import { Icon } from '../Icon/Icon';
-import StarIcon from '@/shared/assets/icons/star.svg';
+import { memo, useState } from "react";
+import { classNames } from "@/shared/lib/classNames/classNames";
+import cls from "./StarRating.module.scss";
+import { Icon } from "../Icon/Icon";
+import StarIcon from "@/shared/assets/icons/star.svg";
 
 interface StarRatingProps {
     className?: string;
@@ -14,14 +14,11 @@ interface StarRatingProps {
 const stars = [1, 2, 3, 4, 5];
 
 export const StarRating = memo((props: StarRatingProps) => {
-    const {
-        className,
-        selectedStars = 0,
-        onSelect,
-        size = 30,
-    } = props;
+    const { className, selectedStars = 0, onSelect, size = 30 } = props;
     const [isHovered, setIsHovered] = useState(false);
-    const [currentStarsCount, setCurrentStarsCount] = useState(selectedStars || 0);
+    const [currentStarsCount, setCurrentStarsCount] = useState(
+        selectedStars || 0,
+    );
     const [isSelected, setIsSelected] = useState(Boolean(selectedStars));
 
     const onHover = (starsCount: number) => () => {
@@ -51,7 +48,11 @@ export const StarRating = memo((props: StarRatingProps) => {
                     className={classNames(
                         cls.starIcon,
                         { [cls.selected]: isSelected },
-                        [currentStarsCount >= starNumber ? cls.hovered : cls.normal],
+                        [
+                            currentStarsCount >= starNumber
+                                ? cls.hovered
+                                : cls.normal,
+                        ],
                     )}
                     Svg={StarIcon}
                     width={size}

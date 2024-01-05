@@ -1,13 +1,13 @@
-import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Avatar } from './Avatar';
-import storybookAvatar from '../../assets/tests/storybook.jpg';
+import React from "react";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Avatar } from "./Avatar";
+import storybookAvatar from "../../assets/tests/storybook.jpg";
 
 export default {
-    title: 'shared/Avatar',
+    title: "shared/Avatar",
     component: Avatar,
     argTypes: {
-        backgroundColor: { control: 'color' },
+        backgroundColor: { control: "color" },
     },
 } as ComponentMeta<typeof Avatar>;
 
@@ -17,11 +17,11 @@ export const Primary = Template.bind({});
 Primary.args = {
     size: 150,
     src: storybookAvatar,
-    alt: 'image',
+    alt: "image",
 };
 export const Small = Template.bind({});
 Small.args = {
     size: 50,
     src: storybookAvatar,
-    alt: 'image',
+    alt: "image",
 };

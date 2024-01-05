@@ -1,14 +1,14 @@
-import { useTranslation } from 'react-i18next';
-import { classNames, Mods } from '@/shared/lib/classNames/classNames';
-import { Text, TextAlign, TextTheme } from '@/shared/ui/Text';
-import { Input } from '@/shared/ui/Input';
-import { Loader } from '@/shared/ui/Loader';
-import { Avatar } from '@/shared/ui/Avatar';
-import { Currency, CurrencySelect } from '@/entities/Currency';
-import { Country, CountrySelect } from '@/entities/Country';
-import { HStack, VStack } from '@/shared/ui/Stack';
-import { Profile } from '../../model/types/profile';
-import cls from './ProfileCard.module.scss';
+import { useTranslation } from "react-i18next";
+import { classNames, Mods } from "@/shared/lib/classNames/classNames";
+import { Text, TextAlign, TextTheme } from "@/shared/ui/Text";
+import { Input } from "@/shared/ui/Input";
+import { Loader } from "@/shared/ui/Loader";
+import { Avatar } from "@/shared/ui/Avatar";
+import { Currency, CurrencySelect } from "@/entities/Currency";
+import { Country, CountrySelect } from "@/entities/Country";
+import { HStack, VStack } from "@/shared/ui/Stack";
+import { Profile } from "../../model/types/profile";
+import cls from "./ProfileCard.module.scss";
 
 interface ProfileCardProps {
     className?: string;
@@ -44,11 +44,18 @@ export const ProfileCard = (props: ProfileCardProps) => {
         onChangeCity,
         isLoading,
     } = props;
-    const { t } = useTranslation('profile');
+    const { t } = useTranslation("profile");
 
     if (isLoading) {
         return (
-            <HStack justify="center" max className={classNames(cls.ProfileCard, {}, [className, cls.loading])}>
+            <HStack
+                justify="center"
+                max
+                className={classNames(cls.ProfileCard, {}, [
+                    className,
+                    cls.loading,
+                ])}
+            >
                 <Loader />
             </HStack>
         );
@@ -56,11 +63,18 @@ export const ProfileCard = (props: ProfileCardProps) => {
 
     if (error) {
         return (
-            <HStack justify="center" max className={classNames(cls.ProfileCard, {}, [className, cls.error])}>
+            <HStack
+                justify="center"
+                max
+                className={classNames(cls.ProfileCard, {}, [
+                    className,
+                    cls.error,
+                ])}
+            >
                 <Text
                     theme={TextTheme.ERROR}
-                    title={t('Сталася помилка під час завантаження профілю')}
-                    text={t('Спробуйте оновити сторінку')}
+                    title={t("Сталася помилка під час завантаження профілю")}
+                    text={t("Спробуйте оновити сторінку")}
                     align={TextAlign.CENTER}
                 />
             </HStack>
@@ -72,7 +86,11 @@ export const ProfileCard = (props: ProfileCardProps) => {
     };
 
     return (
-        <VStack gap="16" max className={classNames(cls.ProfileCard, {}, [className])}>
+        <VStack
+            gap="16"
+            max
+            className={classNames(cls.ProfileCard, {}, [className])}
+        >
             {data?.avatar && (
                 <HStack justify="center" max className={cls.avatarWrapper}>
                     <Avatar src={data?.avatar} />
@@ -81,7 +99,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
             <Input
                 data-testid="ProfileCard.firstname"
                 value={data?.first}
-                placeholder={t('Ваше імя')}
+                placeholder={t("Ваше імя")}
                 className={cls.input}
                 onChange={onChangeFirstname}
                 readonly={readonly}
@@ -89,28 +107,28 @@ export const ProfileCard = (props: ProfileCardProps) => {
             <Input
                 data-testid="ProfileCard.lastname"
                 value={data?.lastname}
-                placeholder={t('Ваше прізвище')}
+                placeholder={t("Ваше прізвище")}
                 className={cls.input}
                 onChange={onChangeLastname}
                 readonly={readonly}
             />
             <Input
                 value={data?.age}
-                placeholder={t('Ваш вік')}
+                placeholder={t("Ваш вік")}
                 className={cls.input}
                 onChange={onChangeAge}
                 readonly={readonly}
             />
             <Input
                 value={data?.city}
-                placeholder={t('Ваше місто')}
+                placeholder={t("Ваше місто")}
                 className={cls.input}
                 onChange={onChangeCity}
                 readonly={readonly}
             />
             <Input
                 value={data?.username}
-                placeholder={t('Ваш нікнейм')}
+                placeholder={t("Ваш нікнейм")}
                 className={cls.input}
                 onChange={onChangeUsername}
                 readonly={readonly}
@@ -129,7 +147,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
             />
             <Input
                 value={data?.avatar}
-                placeholder={t('Ваша аватарка')}
+                placeholder={t("Ваша аватарка")}
                 className={cls.input}
                 onChange={onChangeAvatar}
                 readonly={readonly}

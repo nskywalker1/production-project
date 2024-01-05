@@ -1,283 +1,245 @@
 [
-  {
-    "id": "4",
-    "title": "Наукові відкриття",
-    "subtitle": "Це відкриття шокує кожного",
-    "img": "https://as2.ftcdn.net/v2/jpg/05/79/64/29/1000_F_579642932_z3CUhYjjYWcGIWJtO30pMyYVFpDyoa1W.jpg",
-    "views": 234,
-    "createdAt": "1.09.2022",
-    "userId": "1",
-    "type": [
-      "SCIENCE"
-    ],
-    "blocks": [
-      {
-        "id": "1",
-        "type": "TEXT",
-        "title": "Science",
-        "paragraphs": [
-          "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-        ]
-      }
-    ],
-    "user": {
-      "id": "1",
-      "username": "admin",
-      "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
-      "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
-    }
-  },
-  {
-    "id": "10",
-    "title": "JavaScript news",
-    "subtitle": "Chat GPT та Bard",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png",
-    "views": 234,
-    "createdAt": "12.02.2023",
-    "userId": "1",
-    "type": [
-      "IT"
-    ],
-    "blocks": [
-      {
-        "id": "1",
-        "type": "TEXT",
-        "title": "Science",
-        "paragraphs": [
-          "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-        ]
-      }
-    ],
-    "user": {
-      "id": "1",
-      "username": "admin",
-      "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
-      "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
-    }
-  },
-  {
-    "id": "2",
-    "title": "Python news",
-    "subtitle": "Що нового в Python?",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png",
-    "views": 234,
-    "createdAt": "12.05.2023",
-    "userId": "1",
-    "type": [
-      "IT"
-    ],
-    "blocks": [
-      {
-        "id": "1",
-        "type": "TEXT",
+    {
+        "id": "4",
+        "title": "Наукові відкриття",
+        "subtitle": "Це відкриття шокує кожного",
+        "img": "https://as2.ftcdn.net/v2/jpg/05/79/64/29/1000_F_579642932_z3CUhYjjYWcGIWJtO30pMyYVFpDyoa1W.jpg",
+        "views": 234,
+        "createdAt": "1.09.2022",
+        "userId": "1",
+        "type": ["SCIENCE"],
+        "blocks": [
+            {
+                "id": "1",
+                "type": "TEXT",
+                "title": "Science",
+                "paragraphs": [
+                    "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+                ]
+            }
+        ],
+        "user": {
+            "id": "1",
+            "username": "admin",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+        }
+    },
+    {
+        "id": "10",
+        "title": "JavaScript news",
+        "subtitle": "Chat GPT та Bard",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png",
+        "views": 234,
+        "createdAt": "12.02.2023",
+        "userId": "1",
+        "type": ["IT"],
+        "blocks": [
+            {
+                "id": "1",
+                "type": "TEXT",
+                "title": "Science",
+                "paragraphs": [
+                    "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+                ]
+            }
+        ],
+        "user": {
+            "id": "1",
+            "username": "admin",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+        }
+    },
+    {
+        "id": "2",
         "title": "Python news",
-        "paragraphs": [
-          "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-        ]
-      }
-    ],
-    "user": {
-      "id": "1",
-      "username": "admin",
-      "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
-      "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+        "subtitle": "Що нового в Python?",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png",
+        "views": 234,
+        "createdAt": "12.05.2023",
+        "userId": "1",
+        "type": ["IT"],
+        "blocks": [
+            {
+                "id": "1",
+                "type": "TEXT",
+                "title": "Python news",
+                "paragraphs": [
+                    "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+                ]
+            }
+        ],
+        "user": {
+            "id": "1",
+            "username": "admin",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+        }
+    },
+    {
+        "id": "3",
+        "title": "Ruby guide",
+        "subtitle": "Офіційний гайд на мову Ruby",
+        "img": "https://sumatosoft.com/wp-content/uploads/2023/03/ruby-lang-ar21.png",
+        "views": 234,
+        "createdAt": "12.05.2023",
+        "userId": "2",
+        "type": ["IT"],
+        "blocks": [
+            {
+                "id": "1",
+                "type": "TEXT",
+                "title": "Ruby first",
+                "paragraphs": [
+                    "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+                ]
+            }
+        ],
+        "user": {
+            "id": "2",
+            "username": "user",
+            "password": "123",
+            "roles": ["USER"],
+            "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
+        }
+    },
+    {
+        "id": "6",
+        "title": "Golang гайд",
+        "subtitle": "Chat GPT та Bard",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png",
+        "views": 23,
+        "createdAt": "12.05.2023",
+        "userId": "1",
+        "type": ["IT"],
+        "blocks": [
+            {
+                "id": "1",
+                "type": "TEXT",
+                "title": "Science",
+                "paragraphs": [
+                    "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+                ]
+            }
+        ],
+        "user": {
+            "id": "1",
+            "username": "admin",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+        }
+    },
+    {
+        "id": "9",
+        "title": "Kotlin news",
+        "subtitle": "Chat GPT та Bard",
+        "img": "https://kotlinlang.org/docs/images/kotlin-logo.png",
+        "views": 234,
+        "createdAt": "12.12.2023",
+        "userId": "1",
+        "type": ["IT"],
+        "blocks": [
+            {
+                "id": "1",
+                "type": "TEXT",
+                "title": "Science",
+                "paragraphs": [
+                    "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+                ]
+            }
+        ],
+        "user": {
+            "id": "1",
+            "username": "admin",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+        }
+    },
+    {
+        "id": "14",
+        "title": "C++ news",
+        "subtitle": "Chat GPT та Bard",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
+        "views": 234,
+        "createdAt": "2.05.2023",
+        "userId": "1",
+        "type": ["IT"],
+        "blocks": [
+            {
+                "id": "1",
+                "type": "TEXT",
+                "title": "Science",
+                "paragraphs": [
+                    "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+                ]
+            }
+        ],
+        "user": {
+            "id": "1",
+            "username": "admin",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+        }
+    },
+    {
+        "id": "5",
+        "title": "Штучний інтеллект",
+        "subtitle": "Chat GPT та Bard",
+        "img": "https://ukr.radio/images/news/big/news_1683017975_6450d0f747297.jpg",
+        "views": 234,
+        "createdAt": "2.12.2023",
+        "userId": "1",
+        "type": ["SCIENCE", "IT"],
+        "blocks": [
+            {
+                "id": "1",
+                "type": "TEXT",
+                "title": "Science",
+                "paragraphs": [
+                    "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+                ]
+            }
+        ],
+        "user": {
+            "id": "1",
+            "username": "admin",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+        }
+    },
+    {
+        "id": "12",
+        "title": "Штучний інтеллект",
+        "subtitle": "Chat GPT та Bard",
+        "img": "https://ukr.radio/images/news/big/news_1683017975_6450d0f747297.jpg",
+        "views": 234,
+        "createdAt": "2.12.2023",
+        "userId": "1",
+        "type": ["SCIENCE", "IT"],
+        "blocks": [
+            {
+                "id": "1",
+                "type": "TEXT",
+                "title": "Science",
+                "paragraphs": [
+                    "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+                ]
+            }
+        ],
+        "user": {
+            "id": "1",
+            "username": "admin",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+        }
     }
-  },
-  {
-    "id": "3",
-    "title": "Ruby guide",
-    "subtitle": "Офіційний гайд на мову Ruby",
-    "img": "https://sumatosoft.com/wp-content/uploads/2023/03/ruby-lang-ar21.png",
-    "views": 234,
-    "createdAt": "12.05.2023",
-    "userId": "2",
-    "type": [
-      "IT"
-    ],
-    "blocks": [
-      {
-        "id": "1",
-        "type": "TEXT",
-        "title": "Ruby first",
-        "paragraphs": [
-          "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-        ]
-      }
-    ],
-    "user": {
-      "id": "2",
-      "username": "user",
-      "password": "123",
-      "roles": [
-        "USER"
-      ],
-      "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
-    }
-  },
-  {
-    "id": "6",
-    "title": "Golang гайд",
-    "subtitle": "Chat GPT та Bard",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png",
-    "views": 23,
-    "createdAt": "12.05.2023",
-    "userId": "1",
-    "type": [
-      "IT"
-    ],
-    "blocks": [
-      {
-        "id": "1",
-        "type": "TEXT",
-        "title": "Science",
-        "paragraphs": [
-          "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-        ]
-      }
-    ],
-    "user": {
-      "id": "1",
-      "username": "admin",
-      "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
-      "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
-    }
-  },
-  {
-    "id": "9",
-    "title": "Kotlin news",
-    "subtitle": "Chat GPT та Bard",
-    "img": "https://kotlinlang.org/docs/images/kotlin-logo.png",
-    "views": 234,
-    "createdAt": "12.12.2023",
-    "userId": "1",
-    "type": [
-      "IT"
-    ],
-    "blocks": [
-      {
-        "id": "1",
-        "type": "TEXT",
-        "title": "Science",
-        "paragraphs": [
-          "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-        ]
-      }
-    ],
-    "user": {
-      "id": "1",
-      "username": "admin",
-      "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
-      "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
-    }
-  },
-  {
-    "id": "14",
-    "title": "C++ news",
-    "subtitle": "Chat GPT та Bard",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
-    "views": 234,
-    "createdAt": "2.05.2023",
-    "userId": "1",
-    "type": [
-      "IT"
-    ],
-    "blocks": [
-      {
-        "id": "1",
-        "type": "TEXT",
-        "title": "Science",
-        "paragraphs": [
-          "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-        ]
-      }
-    ],
-    "user": {
-      "id": "1",
-      "username": "admin",
-      "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
-      "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
-    }
-  },
-  {
-    "id": "5",
-    "title": "Штучний інтеллект",
-    "subtitle": "Chat GPT та Bard",
-    "img": "https://ukr.radio/images/news/big/news_1683017975_6450d0f747297.jpg",
-    "views": 234,
-    "createdAt": "2.12.2023",
-    "userId": "1",
-    "type": [
-      "SCIENCE",
-      "IT"
-    ],
-    "blocks": [
-      {
-        "id": "1",
-        "type": "TEXT",
-        "title": "Science",
-        "paragraphs": [
-          "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-        ]
-      }
-    ],
-    "user": {
-      "id": "1",
-      "username": "admin",
-      "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
-      "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
-    }
-  },
-  {
-    "id": "12",
-    "title": "Штучний інтеллект",
-    "subtitle": "Chat GPT та Bard",
-    "img": "https://ukr.radio/images/news/big/news_1683017975_6450d0f747297.jpg",
-    "views": 234,
-    "createdAt": "2.12.2023",
-    "userId": "1",
-    "type": [
-      "SCIENCE",
-      "IT"
-    ],
-    "blocks": [
-      {
-        "id": "1",
-        "type": "TEXT",
-        "title": "Science",
-        "paragraphs": [
-          "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-        ]
-      }
-    ],
-    "user": {
-      "id": "1",
-      "username": "admin",
-      "password": "123",
-      "roles": [
-        "ADMIN"
-      ],
-      "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
-    }
-  }
 ]

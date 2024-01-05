@@ -1,47 +1,47 @@
-import React from 'react';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
-import { Article } from '@/entities/Article';
-import { ArticleRecommendationsList } from './ArticleRecommendationsList';
+import React from "react";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { StoreDecorator } from "@/shared/config/storybook/StoreDecorator/StoreDecorator";
+import { Article } from "@/entities/Article";
+import { ArticleRecommendationsList } from "./ArticleRecommendationsList";
 
 export default {
-    title: 'features/ArticleRecommendationsList',
+    title: "features/ArticleRecommendationsList",
     component: ArticleRecommendationsList,
     argTypes: {
-        backgroundColor: { control: 'color' },
+        backgroundColor: { control: "color" },
     },
 } as ComponentMeta<typeof ArticleRecommendationsList>;
 
-const Template: ComponentStory<typeof ArticleRecommendationsList> = (args) => <ArticleRecommendationsList {...args} />;
+const Template: ComponentStory<typeof ArticleRecommendationsList> = (args) => (
+    <ArticleRecommendationsList {...args} />
+);
 
 const article: Article = {
-    id: '1',
-    img: '',
-    createdAt: '',
+    id: "1",
+    img: "",
+    createdAt: "",
     views: 123,
-    title: 'adsdads',
+    title: "adsdads",
     blocks: [],
     type: [],
-    subtitle: '124',
-    user: { id: '1', username: 'admin' },
+    subtitle: "124",
+    user: { id: "1", username: "admin" },
 };
 
 export const Normal = Template.bind({});
-Normal.args = {
-
-};
+Normal.args = {};
 Normal.decorators = [StoreDecorator({})];
 Normal.parameters = {
     mockData: [
         {
             url: `${__API__}/articles?_limit=4`,
-            method: 'GET',
+            method: "GET",
             status: 200,
             response: [
-                { ...article, id: '1' },
-                { ...article, id: '2' },
-                { ...article, id: '3' },
-                { ...article, id: '4' },
+                { ...article, id: "1" },
+                { ...article, id: "2" },
+                { ...article, id: "3" },
+                { ...article, id: "4" },
             ],
         },
     ],
