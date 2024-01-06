@@ -1,729 +1,798 @@
 {
-    "notifications": [
+  "notifications": [
+    {
+      "id": "1",
+      "title": "Сповіщення 1",
+      "description": "Будь яке сповіщення",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "Сповіщення 2",
+      "description": "Будь яке сповіщення 2",
+      "userId": "1",
+      "href": "http://localhost:3000/admin"
+    },
+    {
+      "id": "3",
+      "title": "Сповіщення 3",
+      "description": "Будь яке сповіщення 3",
+      "userId": "1"
+    },
+    {
+      "id": "4",
+      "title": "Сповіщення 4",
+      "description": "Будь яке сповіщення 4",
+      "userId": "1",
+      "href": "http://localhost:3000/admin"
+    }
+  ],
+  "articles": [
+    {
+      "id": "1",
+      "title": "Javascript guide",
+      "subtitle": "Повний гайд по мові програмування JavaScript",
+      "img": "https://blog.logrocket.com/wp-content/uploads/2020/12/javascript-custom-events.png",
+      "views": 1022,
+      "createdAt": "26.11.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
         {
-            "id": "1",
-            "title": "Сповіщення 1",
-            "description": "Будь яке сповіщення",
-            "userId": "1"
+          "id": "1",
+          "type": "TEXT",
+          "title": "Перша программа на JavaScript",
+          "paragraphs": [
+            "Створимо першу програму на javascript. Для написання і тестування програм на JavaScript нам знадобляться дві речі: текстовий редактор і веб-браузер.",
+            "Як текстовий редактор можна взяти будь-який, який подобається - Atom, Sublime Text, Visual Studio Code, Notepad++ та інші. У цьому посібнику я орієнтуватимуся на безкоштовний і багатофункціональний текстовий редактор Visual Studio Code, оскільки він є найбільш популярним.",
+            "Як браузер також можна взяти останні версії будь-якого кращого веб-браузера. У цьому посібнику я буду переважно орієнтуватися на Google Chrome.",
+            "Для початку визначимо для нашого додатка який-небудь каталог. Наприклад, створимо на диску C папку app. У цій папці створимо файл під назвою index.html. Тобто цей файл представлятиме веб-сторінку з кодом HTML."
+          ]
         },
         {
-            "id": "2",
-            "title": "Сповіщення 2",
-            "description": "Будь яке сповіщення 2",
-            "userId": "1",
-            "href": "http://localhost:3000/admin"
+          "id": "4",
+          "type": "CODE",
+          "code": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\" />\n    <title>METANIT.COM</title>\n</head>\n<body>\n    <script>\n        document.write(\"<h2>Первая программа на JavaScript</h2>\");\n    </script>\n</body>\n</html>"
         },
         {
-            "id": "3",
-            "title": "Сповіщення 3",
-            "description": "Будь яке сповіщення 3",
-            "userId": "1"
+          "id": "5",
+          "type": "TEXT",
+          "title": "Заголовок блоку",
+          "paragraphs": [
+            "Коли браузер отримує веб-сторінку з кодом html і javascript, то він її інтерпретує. Результат інтерпретації у вигляді різних елементів - кнопок, полів введення, текстових блоків тощо, ми бачимо перед собою в браузері. Інтерпретація веб-сторінки відбувається послідовно зверху вниз.",
+            "Коли браузер зустрічає на веб-сторінці елемент <script> з кодом javascript, то вступає в дію вбудований інтерпретатор javascript. І поки він не закінчить свою роботу, далі інтерпретація веб-сторінки не йде."
+          ]
         },
         {
-            "id": "4",
-            "title": "Сповіщення 4",
-            "description": "Будь яке сповіщення 4",
-            "userId": "1",
-            "href": "http://localhost:3000/admin"
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://images.theengineeringprojects.com/image/main/2019/12/Where-To-Add-Your-JavaScript-File-1-1.png",
+          "title": "Приклад коду 1"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\" />\n    <title>METANIT.COM</title>\n    <script>\n        document.write(\"Начальный текст\");\n    </script>\n</head>\n<body>\n    <h2>Первый заголовок</h2>\n    <script>\n        document.write(\"Первый текст\");\n    </script>\n    <h2>Второй заголовок</h2>\n    <script>\n        document.write(\"Второй текст\");\n    </script>\n</body>\n</html>"
+        },
+        {
+          "id": "7",
+          "type": "TEXT",
+          "title": "Заголовок блоку 2",
+          "paragraphs": [
+            "Коли браузер отримує веб-сторінку з кодом html і javascript, то він її інтерпретує. Результат інтерпретації у вигляді різних елементів - кнопок, полів введення, текстових блоків тощо, ми бачимо перед собою в браузері. Інтерпретація веб-сторінки відбувається послідовно зверху вниз.",
+            "Коли браузер зустрічає на веб-сторінці елемент <script> з кодом javascript, то вступає в дію вбудований інтерпретатор javascript. І поки він не закінчить свою роботу, далі інтерпретація веб-сторінки не йде."
+          ]
+        },
+        {
+          "id": "9",
+          "type": "IMAGE",
+          "src": "https://images.theengineeringprojects.com/image/main/2019/12/Where-To-Add-Your-JavaScript-File-1-1.png",
+          "title": "Приклад коду 2"
         }
-    ],
-    "articles": [
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Python news",
+      "subtitle": "Що нового в Python?",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png",
+      "views": 234,
+      "createdAt": "12.05.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
         {
-            "id": "1",
-            "title": "Javascript guide",
-            "subtitle": "Повний гайд по мові програмування JavaScript",
-            "img": "https://blog.logrocket.com/wp-content/uploads/2020/12/javascript-custom-events.png",
-            "views": 1022,
-            "createdAt": "26.11.2023",
-            "userId": "1",
-            "type": ["IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Перша программа на JavaScript",
-                    "paragraphs": [
-                        "Створимо першу програму на javascript. Для написання і тестування програм на JavaScript нам знадобляться дві речі: текстовий редактор і веб-браузер.",
-                        "Як текстовий редактор можна взяти будь-який, який подобається - Atom, Sublime Text, Visual Studio Code, Notepad++ та інші. У цьому посібнику я орієнтуватимуся на безкоштовний і багатофункціональний текстовий редактор Visual Studio Code, оскільки він є найбільш популярним.",
-                        "Як браузер також можна взяти останні версії будь-якого кращого веб-браузера. У цьому посібнику я буду переважно орієнтуватися на Google Chrome.",
-                        "Для початку визначимо для нашого додатка який-небудь каталог. Наприклад, створимо на диску C папку app. У цій папці створимо файл під назвою index.html. Тобто цей файл представлятиме веб-сторінку з кодом HTML."
-                    ]
-                },
-                {
-                    "id": "4",
-                    "type": "CODE",
-                    "code": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\" />\n    <title>METANIT.COM</title>\n</head>\n<body>\n    <script>\n        document.write(\"<h2>Первая программа на JavaScript</h2>\");\n    </script>\n</body>\n</html>"
-                },
-                {
-                    "id": "5",
-                    "type": "TEXT",
-                    "title": "Заголовок блоку",
-                    "paragraphs": [
-                        "Коли браузер отримує веб-сторінку з кодом html і javascript, то він її інтерпретує. Результат інтерпретації у вигляді різних елементів - кнопок, полів введення, текстових блоків тощо, ми бачимо перед собою в браузері. Інтерпретація веб-сторінки відбувається послідовно зверху вниз.",
-                        "Коли браузер зустрічає на веб-сторінці елемент <script> з кодом javascript, то вступає в дію вбудований інтерпретатор javascript. І поки він не закінчить свою роботу, далі інтерпретація веб-сторінки не йде."
-                    ]
-                },
-                {
-                    "id": "2",
-                    "type": "IMAGE",
-                    "src": "https://images.theengineeringprojects.com/image/main/2019/12/Where-To-Add-Your-JavaScript-File-1-1.png",
-                    "title": "Приклад коду 1"
-                },
-                {
-                    "id": "3",
-                    "type": "CODE",
-                    "code": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\" />\n    <title>METANIT.COM</title>\n    <script>\n        document.write(\"Начальный текст\");\n    </script>\n</head>\n<body>\n    <h2>Первый заголовок</h2>\n    <script>\n        document.write(\"Первый текст\");\n    </script>\n    <h2>Второй заголовок</h2>\n    <script>\n        document.write(\"Второй текст\");\n    </script>\n</body>\n</html>"
-                },
-                {
-                    "id": "7",
-                    "type": "TEXT",
-                    "title": "Заголовок блоку 2",
-                    "paragraphs": [
-                        "Коли браузер отримує веб-сторінку з кодом html і javascript, то він її інтерпретує. Результат інтерпретації у вигляді різних елементів - кнопок, полів введення, текстових блоків тощо, ми бачимо перед собою в браузері. Інтерпретація веб-сторінки відбувається послідовно зверху вниз.",
-                        "Коли браузер зустрічає на веб-сторінці елемент <script> з кодом javascript, то вступає в дію вбудований інтерпретатор javascript. І поки він не закінчить свою роботу, далі інтерпретація веб-сторінки не йде."
-                    ]
-                },
-                {
-                    "id": "9",
-                    "type": "IMAGE",
-                    "src": "https://images.theengineeringprojects.com/image/main/2019/12/Where-To-Add-Your-JavaScript-File-1-1.png",
-                    "title": "Приклад коду 2"
-                }
-            ]
-        },
-        {
-            "id": "2",
-            "title": "Python news",
-            "subtitle": "Що нового в Python?",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png",
-            "views": 234,
-            "createdAt": "12.05.2023",
-            "userId": "1",
-            "type": ["IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Python news",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "3",
-            "title": "Ruby guide",
-            "subtitle": "Офіційний гайд на мову Ruby",
-            "img": "https://sumatosoft.com/wp-content/uploads/2023/03/ruby-lang-ar21.png",
-            "views": 234,
-            "createdAt": "12.05.2023",
-            "userId": "2",
-            "type": ["IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Ruby first",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "4",
-            "title": "Наукові відкриття",
-            "subtitle": "Це відкриття шокує кожного",
-            "img": "https://as2.ftcdn.net/v2/jpg/05/79/64/29/1000_F_579642932_z3CUhYjjYWcGIWJtO30pMyYVFpDyoa1W.jpg",
-            "views": 234,
-            "createdAt": "1.09.2022",
-            "userId": "1",
-            "type": ["SCIENCE"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "5",
-            "title": "Штучний інтеллект",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://ukr.radio/images/news/big/news_1683017975_6450d0f747297.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["SCIENCE", "IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "6",
-            "title": "Golang гайд",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png",
-            "views": 23,
-            "createdAt": "12.05.2023",
-            "userId": "1",
-            "type": ["IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "7",
-            "title": "Українська економіка у війні",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://www.russiamatters.org/sites/default/files/media/inline/Ukraine%20overall%2012.12.23-1.jpg",
-            "views": 5402,
-            "createdAt": "23.08.2022",
-            "userId": "1",
-            "type": ["ECONOMICS"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "9",
-            "title": "Kotlin news",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://kotlinlang.org/docs/images/kotlin-logo.png",
-            "views": 234,
-            "createdAt": "12.12.2023",
-            "userId": "1",
-            "type": ["IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "10",
-            "title": "JavaScript news",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png",
-            "views": 234,
-            "createdAt": "12.02.2023",
-            "userId": "1",
-            "type": ["IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "11",
-            "title": "Біологія",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://udpu.edu.ua/images/public/centers/897/091.jpg",
-            "views": 2314,
-            "createdAt": "30.11.2023",
-            "userId": "1",
-            "type": ["SCIENCE"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "12",
-            "title": "Штучний інтеллект",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://ukr.radio/images/news/big/news_1683017975_6450d0f747297.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["SCIENCE", "IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "14",
-            "title": "Python news",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://www.logo.wine/a/logo/Python_(programming_language)/Python_(programming_language)-Logo.wine.svg",
-            "views": 12,
-            "createdAt": "9.10.2023",
-            "userId": "1",
-            "type": ["IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "14",
-            "title": "C++ news",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
-            "views": 234,
-            "createdAt": "2.05.2023",
-            "userId": "1",
-            "type": ["IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "15",
-            "title": "C#",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg",
-            "views": 234,
-            "createdAt": "5.03.2023",
-            "userId": "1",
-            "type": ["IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "16",
-            "title": "Нова допомога від США ",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["ECONOMICS"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "17",
-            "title": "Штучний інтеллект",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://ukr.radio/images/news/big/news_1683017975_6450d0f747297.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["SCIENCE", "IT"],
-            "blocks": [
-                {
-                    "id": "1",
-                    "type": "TEXT",
-                    "title": "Science",
-                    "paragraphs": [
-                        "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
-                    ]
-                }
-            ]
-        },
-        {
-            "title": "Нова допомога від США ",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["ECONOMICS"],
-            "blocks": [],
-            "id": "h7PEeHA"
-        },
-        {
-            "title": "Нова допомога від США ",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["ECONOMICS"],
-            "blocks": [],
-            "id": "XpjEkTQ"
-        },
-        {
-            "title": "Нова допомога від США ",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["ECONOMICS"],
-            "blocks": [],
-            "id": "GsvSuLU"
-        },
-        {
-            "title": "Нова допомога від США ",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["ECONOMICS"],
-            "blocks": [],
-            "id": "sSzm5nn"
-        },
-        {
-            "title": "Нова допомога від США ",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["ECONOMICS"],
-            "blocks": [],
-            "id": "DLHO02n"
-        },
-        {
-            "title": "Нова допомога від США ",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["ECONOMICS"],
-            "blocks": [],
-            "id": "PKRoPKe"
-        },
-        {
-            "title": "Нова допомога від США ",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["ECONOMICS"],
-            "blocks": [],
-            "id": "H4rhvwR"
-        },
-        {
-            "title": "Нова допомога від США ",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["ECONOMICS"],
-            "blocks": [],
-            "id": "X5STE9w"
-        },
-        {
-            "title": "Нова допомога від США ",
-            "subtitle": "Chat GPT та Bard",
-            "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
-            "views": 234,
-            "createdAt": "2.12.2023",
-            "userId": "1",
-            "type": ["ECONOMICS"],
-            "blocks": [],
-            "id": "f73Waxp"
+          "id": "1",
+          "type": "TEXT",
+          "title": "Python news",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
         }
-    ],
-    "comments": [
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Ruby guide",
+      "subtitle": "Офіційний гайд на мову Ruby",
+      "img": "https://sumatosoft.com/wp-content/uploads/2023/03/ruby-lang-ar21.png",
+      "views": 234,
+      "createdAt": "12.05.2023",
+      "userId": "2",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
         {
-            "id": "1",
-            "text": "some comment",
-            "articleId": "1",
-            "userId": "1"
-        },
-        {
-            "id": "2",
-            "text": "nice comment",
-            "articleId": "1",
-            "userId": "2"
-        },
-        {
-            "id": "3",
-            "text": "like!!!",
-            "articleId": 1,
-            "userId": "1"
-        },
-        {
-            "articleId": "1",
-            "userId": "1",
-            "text": "test",
-            "id": "2RSgH2I"
-        },
-        {
-            "articleId": "1",
-            "userId": "2",
-            "text": "nice",
-            "id": "QNDIstZ"
-        },
-        {
-            "articleId": "1",
-            "userId": "2",
-            "text": "чудово",
-            "id": "gA0renl"
-        },
-        {
-            "articleId": "1",
-            "userId": "1",
-            "text": "топ стаття",
-            "id": "92vC41s"
-        },
-        {
-            "articleId": "4",
-            "userId": "1",
-            "text": "Цікаво!",
-            "id": "LEFMp_-"
-        },
-        {
-            "articleId": "3",
-            "userId": "1",
-            "text": "Давно хотів вивчити",
-            "id": "O4vc1kn"
-        },
-        {
-            "articleId": "10",
-            "userId": "1",
-            "text": "good",
-            "id": "864e7cH"
-        },
-        {
-            "articleId": "4",
-            "userId": "1",
-            "text": "nice",
-            "id": "EgYncCZ"
-        },
-        {
-            "articleId": "4",
-            "userId": "1",
-            "text": "niceee",
-            "id": "0PkLGhH"
-        },
-        {
-            "articleId": "4",
-            "userId": "1",
-            "text": "good",
-            "id": "p03xpri"
-        },
-        {
-            "articleId": "16",
-            "userId": "2",
-            "text": "все буде добре",
-            "id": "Zsw3m8u"
-        },
-        {
-            "articleId": "PKRoPKe",
-            "userId": "4",
-            "text": "text",
-            "id": "uDN4SHe"
-        },
-        {
-            "articleId": "X5STE9w",
-            "userId": "4",
-            "text": "text",
-            "id": "w8Q9-Ic"
+          "id": "1",
+          "type": "TEXT",
+          "title": "Ruby first",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
         }
-    ],
-    "users": [
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Наукові відкриття",
+      "subtitle": "Це відкриття шокує кожного",
+      "img": "https://as2.ftcdn.net/v2/jpg/05/79/64/29/1000_F_579642932_z3CUhYjjYWcGIWJtO30pMyYVFpDyoa1W.jpg",
+      "views": 234,
+      "createdAt": "1.09.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [
         {
-            "id": "1",
-            "username": "admin",
-            "password": "123",
-            "roles": [
-                "ADMIN"
-            ],
-            "features": {
-                "isArticleRatingEnabled": true
-            },
-            "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
-        },
-        {
-            "id": "2",
-            "username": "user",
-            "password": "123",
-            "features": {
-                "isArticleRatingEnabled": false
-            },
-            "roles": ["USER"],
-            "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
-        },
-        {
-            "id": "3",
-            "username": "manager",
-            "password": "123",
-            "features": {
-                "isArticleRatingEnabled": true
-            },
-            "roles": ["MANAGER"],
-            "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
-        },
-        {
-            "id": "4",
-            "username": "testuser",
-            "password": "123",
-            "roles": ["ADMIN"],
-            "features": {
-                "isArticleRatingEnabled": false
-            },
-            "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
         }
-    ],
-    "profile": [
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Штучний інтеллект",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://ukr.radio/images/news/big/news_1683017975_6450d0f747297.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "SCIENCE",
+        "IT"
+      ],
+      "blocks": [
         {
-            "id": "1",
-            "first": "Назар",
-            "lastname": "Рачківський",
-            "age": 20,
-            "currency": "UAH",
-            "country": "Ukraine",
-            "city": "Kyiv",
-            "username": "admin",
-            "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsOvAyOK_nlWbb8PpsKvfceKSIuM-QRgJge26rWGTIotKkFBoTwyvmxVp6YJ5OT5Q5q6g&usqp=CAU"
-        },
-        {
-            "id": "2",
-            "first": "Андрій",
-            "lastname": "Шевченко",
-            "age": 20,
-            "currency": "EUR",
-            "country": "Germany",
-            "city": "Berlin",
-            "username": "user",
-            "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
-        },
-        {
-            "id": "4",
-            "first": "test",
-            "lastname": "user",
-            "age": 465,
-            "currency": "EUR",
-            "country": "Ukraine",
-            "city": "Kyiv",
-            "username": "testuser",
-            "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
         }
-    ],
-    "article-ratings": [
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Golang гайд",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png",
+      "views": 23,
+      "createdAt": "12.05.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
         {
-            "id": "1",
-            "rate": 4,
-            "feedback": "Чудова стаття",
-            "userId": "1",
-            "articleId": "1"
-        },
-        {
-            "id": "2",
-            "rate": 3,
-            "feedback": "Нормально",
-            "userId": "2",
-            "articleId": "2"
-        },
-        {
-            "id": "3",
-            "rate": 5,
-            "feedback": "Найкращий",
-            "userId": "2",
-            "articleId": "1"
-        },
-        {
-            "userId": "1",
-            "articleId": "4",
-            "rate": 4,
-            "feedback": "",
-            "id": "diVuMRn"
-        },
-        {
-            "userId": "1",
-            "articleId": "6",
-            "rate": 1,
-            "feedback": "",
-            "id": "eBSXbTv"
-        },
-        {
-            "userId": "1",
-            "articleId": "3",
-            "rate": 4,
-            "feedback": "Все працює",
-            "id": "Ou0siVJ"
-        },
-        {
-            "userId": "1",
-            "articleId": "10",
-            "rate": 4,
-            "feedback": "Добре",
-            "id": "tsZSlGa"
-        },
-        {
-            "userId": "1",
-            "articleId": "5",
-            "rate": 5,
-            "feedback": "",
-            "id": "BuFco6F"
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Українська економіка у війні",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://www.russiamatters.org/sites/default/files/media/inline/Ukraine%20overall%2012.12.23-1.jpg",
+      "views": 5402,
+      "createdAt": "23.08.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Kotlin news",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://kotlinlang.org/docs/images/kotlin-logo.png",
+      "views": 234,
+      "createdAt": "12.12.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "JavaScript news",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png",
+      "views": 234,
+      "createdAt": "12.02.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Біологія",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://udpu.edu.ua/images/public/centers/897/091.jpg",
+      "views": 2314,
+      "createdAt": "30.11.2023",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Штучний інтеллект",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://ukr.radio/images/news/big/news_1683017975_6450d0f747297.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "SCIENCE",
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Python news",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://www.logo.wine/a/logo/Python_(programming_language)/Python_(programming_language)-Logo.wine.svg",
+      "views": 12,
+      "createdAt": "9.10.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "C++ news",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
+      "views": 234,
+      "createdAt": "2.05.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "C#",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg",
+      "views": 234,
+      "createdAt": "5.03.2023",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Штучний інтеллект",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://ukr.radio/images/news/big/news_1683017975_6450d0f747297.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "SCIENCE",
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Science",
+          "paragraphs": [
+            "Python — це потужна мова програмування, яка проста у вивченні. Він має ефективні структури даних високого рівня та простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис і динамічна типізація Python разом з його інтерпретованим характером роблять його ідеальною мовою для створення сценаріїв і швидкої розробки додатків у багатьох сферах на більшості платформ."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "h7PEeHA"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "XpjEkTQ"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "GsvSuLU"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "sSzm5nn"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "DLHO02n"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "PKRoPKe"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "H4rhvwR"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "X5STE9w"
+    },
+    {
+      "title": "Нова допомога від США ",
+      "subtitle": "Chat GPT та Bard",
+      "img": "https://static01.nyt.com/images/2023/02/23/multimedia/23dc-intel-01-jvwt/23dc-intel-01-jvwt-videoSixteenByNine3000.jpg",
+      "views": 234,
+      "createdAt": "2.12.2023",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "f73Waxp"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "some comment",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "text": "nice comment",
+      "articleId": "1",
+      "userId": "2"
+    },
+    {
+      "id": "3",
+      "text": "like!!!",
+      "articleId": 1,
+      "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "test",
+      "id": "2RSgH2I"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "nice",
+      "id": "QNDIstZ"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "чудово",
+      "id": "gA0renl"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "топ стаття",
+      "id": "92vC41s"
+    },
+    {
+      "articleId": "4",
+      "userId": "1",
+      "text": "Цікаво!",
+      "id": "LEFMp_-"
+    },
+    {
+      "articleId": "3",
+      "userId": "1",
+      "text": "Давно хотів вивчити",
+      "id": "O4vc1kn"
+    },
+    {
+      "articleId": "10",
+      "userId": "1",
+      "text": "good",
+      "id": "864e7cH"
+    },
+    {
+      "articleId": "4",
+      "userId": "1",
+      "text": "nice",
+      "id": "EgYncCZ"
+    },
+    {
+      "articleId": "4",
+      "userId": "1",
+      "text": "niceee",
+      "id": "0PkLGhH"
+    },
+    {
+      "articleId": "4",
+      "userId": "1",
+      "text": "good",
+      "id": "p03xpri"
+    },
+    {
+      "articleId": "16",
+      "userId": "2",
+      "text": "все буде добре",
+      "id": "Zsw3m8u"
+    },
+    {
+      "articleId": "PKRoPKe",
+      "userId": "4",
+      "text": "text",
+      "id": "uDN4SHe"
+    },
+    {
+      "articleId": "X5STE9w",
+      "userId": "4",
+      "text": "text",
+      "id": "w8Q9-Ic"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "features": {
+        "isArticleRatingEnabled": true
+      },
+      "jsonSettings": {
+        "theme": "app_full_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
+      "avatar": "https://mobimg.b-cdn.net/v3/fetch/22/2207633df03a819cd72889249c8361a8.jpeg?w=1470&r=0.5625"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "123",
+      "features": {
+        "isArticleRatingEnabled": false
+      },
+      "roles": [
+        "USER"
+      ],
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
+      "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
+    },
+    {
+      "id": "3",
+      "username": "manager",
+      "password": "123",
+      "features": {
+        "isArticleRatingEnabled": true
+      },
+      "roles": [
+        "MANAGER"
+      ],
+      "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "features": {
+        "isArticleRatingEnabled": false
+      },
+      "avatar": "https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-office-work-user-icon-avatar-png-image_1527655.jpg"
+    }
+  ],
+  "profile": [
+    {
+      "id": "1",
+      "first": "Назар",
+      "lastname": "Рачківський",
+      "age": 20,
+      "currency": "UAH",
+      "country": "Ukraine",
+      "city": "Kyiv",
+      "username": "admin",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsOvAyOK_nlWbb8PpsKvfceKSIuM-QRgJge26rWGTIotKkFBoTwyvmxVp6YJ5OT5Q5q6g&usqp=CAU"
+    },
+    {
+      "id": "2",
+      "first": "Андрій",
+      "lastname": "Шевченко",
+      "age": 20,
+      "currency": "EUR",
+      "country": "Germany",
+      "city": "Berlin",
+      "username": "user",
+      "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
+    },
+    {
+      "id": "4",
+      "first": "test",
+      "lastname": "user",
+      "age": 465,
+      "currency": "EUR",
+      "country": "Ukraine",
+      "city": "Kyiv",
+      "username": "testuser",
+      "avatar": "https://www.freeiconspng.com/uploads/computer-user-icon-16.png"
+    }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Чудова стаття",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 3,
+      "feedback": "Нормально",
+      "userId": "2",
+      "articleId": "2"
+    },
+    {
+      "id": "3",
+      "rate": 5,
+      "feedback": "Найкращий",
+      "userId": "2",
+      "articleId": "1"
+    },
+    {
+      "userId": "1",
+      "articleId": "4",
+      "rate": 4,
+      "feedback": "",
+      "id": "diVuMRn"
+    },
+    {
+      "userId": "1",
+      "articleId": "6",
+      "rate": 1,
+      "feedback": "",
+      "id": "eBSXbTv"
+    },
+    {
+      "userId": "1",
+      "articleId": "3",
+      "rate": 4,
+      "feedback": "Все працює",
+      "id": "Ou0siVJ"
+    },
+    {
+      "userId": "1",
+      "articleId": "10",
+      "rate": 4,
+      "feedback": "Добре",
+      "id": "tsZSlGa"
+    },
+    {
+      "userId": "1",
+      "articleId": "5",
+      "rate": 5,
+      "feedback": "",
+      "id": "BuFco6F"
+    }
+  ]
 }
