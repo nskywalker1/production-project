@@ -51,6 +51,7 @@ module.exports = {
         "import/no-extraneous-dependencies": "off",
         "no-underscore-dangle": "off",
         "no-undef": "off",
+        "react/no-unstable-nested-components": "warn",
         "nazar-plugin/layer-imports": [
             "error",
             {
