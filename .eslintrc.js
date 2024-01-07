@@ -88,6 +88,7 @@ module.exports = {
                     "gap",
                     "border",
                     "role",
+                    "feature",
                     "div",
                 ],
             },
