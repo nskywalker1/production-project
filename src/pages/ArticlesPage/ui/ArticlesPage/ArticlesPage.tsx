@@ -14,6 +14,7 @@ import { fetchNextArticlesPage } from "../../model/services/fetchNextArticlesPag
 import { initArticlesPage } from "../../model/services/initArticlesPage/initArticlesPage";
 import { articlesPageReducer } from "../../model/slice/articlesPageSlice";
 import cls from "./ArticlesPage.module.scss";
+import { ArticlePageGreeting } from "@/features/articlePageGreeting";
 
 interface ArticlesPageProps {
     className?: string;
@@ -42,6 +43,7 @@ const ArticlesPage = ({ className }: ArticlesPageProps) => {
                 onScrollEnd={onLoadNextPart}
                 className={classNames("", {}, [className])}
             >
+                <ArticlePageGreeting />
                 <ArticlesPageFilters />
                 <ArticleInfiniteList className={cls.list} />
             </Page>
