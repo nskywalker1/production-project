@@ -651,7 +651,8 @@
         "ADMIN"
       ],
       "features": {
-        "isArticleRatingEnabled": true
+        "isArticleRatingEnabled": true,
+        "isAppRedesigned": true
       },
       "jsonSettings": {
         "theme": "app_full_dark_theme",

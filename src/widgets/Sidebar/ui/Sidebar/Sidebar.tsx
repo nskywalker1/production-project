@@ -8,6 +8,8 @@ import { VStack } from "@/shared/ui/Stack";
 import { SidebarItem } from "../SidebarItem/SidebarItem";
 import cls from "./Sidebar.module.scss";
 import { getSidebarItems } from "../../model/selectors/getSidebarItems";
+import { ToggleFeatures } from "@/shared/features";
+import { SidebarRedesigned } from "../../../../widgets/Sidebar/ui/SidebarRedesigned/SidebarRedesigned";
 
 interface SidebarProps {
     className?: string;
@@ -32,7 +34,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
         [collapsed, sidebarItemsList],
     );
 
-    return (
+    const sidebarOff = (
         <aside
             data-testid="sidebar"
             className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
@@ -58,5 +60,13 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                 <LangSwitcher short={collapsed} className={cls.lang} />
             </div>
         </aside>
+    );
+
+    return (
+        <ToggleFeatures
+            feature="isAppRedesigned"
+            on={<SidebarRedesigned />}
+            off={sidebarOff}
+        />
     );
 });
