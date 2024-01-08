@@ -45,7 +45,7 @@ module.exports = {
         "jsx-a11y/no-static-element-interactions": "off",
         "import/extensions": "off",
         "no-param-reassign": "off",
-        "react/jsx-max-props-per-line": ["error", { maximum: 3 }],
+        "react/jsx-max-props-per-line": ["warn", { maximum: 3 }],
         "unused-imports/no-unused-imports": "error",
         "jsx-a11y/click-events-have-key-events": "off",
         "import/no-extraneous-dependencies": "off",
