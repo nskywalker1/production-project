@@ -7,9 +7,9 @@ import { Sidebar } from "@/widgets/Sidebar";
 import { getUserInited, initAuthData } from "@/entities/User";
 import { useTheme } from "@/shared/lib/hooks/useTheme/useTheme";
 import { useAppDispatch } from "@/shared/lib/hooks/useAppDispatch/useAppDispatch";
-import { PageLoader } from "@/shared/ui/PageLoader";
 import { ToggleFeatures } from "@/shared/features";
 import { MainLayout } from "@/shared/layouts/MainLayout";
+import { PageLoader } from "@/shared/ui/deprecated/PageLoader";
 
 function App() {
     const { theme } = useTheme();

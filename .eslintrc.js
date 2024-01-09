@@ -89,6 +89,7 @@ module.exports = {
                     "border",
                     "role",
                     "feature",
+                    "color",
                     "div",
                 ],
             },

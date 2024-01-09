@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { RequireAuth } from "../ui/RequireAuth";
 import { routeConfig } from "../config/routeConfig";
 import { AppRoutesProps } from "@/shared/types/router";
-import { PageLoader } from "@/shared/ui/PageLoader";
+import { PageLoader } from "@/shared/ui/deprecated/PageLoader";
 
 export const AppRouter = memo(() => {
     const renderWithWrapper = useCallback((route: AppRoutesProps) => {
