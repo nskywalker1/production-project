@@ -4,7 +4,7 @@ import { classNames } from "@/shared/lib/classNames/classNames";
 import { DropdownDirection } from "@/shared/types/ui";
 import { Button } from "../../../Button/ui/Button";
 import cls from "./ListBox.module.scss";
-import { HStack } from "../../../Stack/HStack/HStack";
+import { HStack } from "../../../../redesigned/Stack/HStack/HStack";
 import { mapDirectionClass } from "../../styles/consts";
 import popupCls from "../../styles/popup.module.scss";
 

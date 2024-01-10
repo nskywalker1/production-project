@@ -14,6 +14,15 @@
     padding-top: 20px;
 }
 
+.switchers {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    gap: 16px;
+}
+
 .collapseBtn {
     position: absolute;
     right: 0;
@@ -33,13 +42,9 @@
     .collapseBtn {
         transform: rotate(-90deg);
     }
-}
 
-.switchers {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    gap: 16px;
+    .switchers {
+        flex-direction: column;
+        align-items: center;
+    }
 }
