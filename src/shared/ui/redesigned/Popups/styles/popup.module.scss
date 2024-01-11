@@ -8,8 +8,17 @@
     overflow: hidden;
 }
 
+.trigger {
+    background: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
 .active {
-    color: var(--light-bg-redesigned);
+    background: var(--light-bg-redesigned);
 }
 
 .optionsBottomLeft {
@@ -22,25 +31,16 @@
     left: 0;
 }
 
-.optionsTopLeft {
-    bottom: 100%;
-    right: 0;
-}
-
-.disabled {
-    opacity: 0.7;
-}
-
 .optionsTopRight {
     bottom: 100%;
     left: 0;
 }
 
-.trigger {
-    background: none;
-    outline: none;
-    margin: 0;
-    padding: 0;
-    border: none;
-    cursor: pointer;
+.optionsTopLeft {
+    right: 0;
+    bottom: 100%;
+}
+
+.disabled {
+    opacity: 0.7;
 }

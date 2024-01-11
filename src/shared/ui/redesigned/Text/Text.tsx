@@ -6,7 +6,7 @@ export type TextAlign = "right" | "left" | "center";
 
 export type TextVariant = "primary" | "error" | "accent";
 
-export type TextSize = "m" | "l";
+export type TextSize = "s" | "m" | "l";
 
 interface TextProps {
     className?: string;
@@ -18,14 +18,16 @@ interface TextProps {
     "data-testid"?: string;
 }
 
-type HeaderTagType = "h1" | "h2";
+type HeaderTagType = "h1" | "h2" | "h3";
 
 const mapSizeToClass: Record<TextSize, string> = {
+    s: "size_s",
     m: "size_m",
     l: "size_l",
 };
 
 const mapSizeToHeaderTag: Record<TextSize, HeaderTagType> = {
+    s: "h3",
     m: "h2",
     l: "h1",
 };
