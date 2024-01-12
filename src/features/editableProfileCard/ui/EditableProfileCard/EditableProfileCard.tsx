@@ -7,7 +7,7 @@ import { useInitialEffect } from "@/shared/lib/hooks/useInitialEffect/useInitial
 import { Currency } from "@/entities/Currency";
 import { Country } from "@/entities/Country";
 import { Text, TextTheme } from "@/shared/ui/deprecated/Text";
-import { ProfileCard } from "@/entities/Profile";
+import { ProfileCard, ProfileCardRedesigned } from "@/entities/Profile";
 import {
     DynamicModuleLoader,
     ReducersList,
@@ -22,6 +22,7 @@ import { getProfileReadonly } from "../../model/selectors/getProfileReadonly/get
 import { getProfileValidateErrors } from "../../model/selectors/getProfileValidateErrors/getProfileValidateErrors";
 import { fetchProfileData } from "../../model/services/fetchProfileData/fetchProfileData";
 import { profileActions, profileReducer } from "../../model/slice/profileSlice";
+import { ToggleFeatures } from "@/shared/features";
 
 interface EditableProfileCardProps {
     className?: string;
@@ -128,19 +129,40 @@ export const EditableProfileCard = memo((props: EditableProfileCardProps) => {
                             text={validateErrorTranslates[err]}
                         />
                     ))}
-                <ProfileCard
-                    onChangeAvatar={onChangeAvatar}
-                    onChangeUsername={onChangeUsername}
-                    data={formData}
-                    onChangeAge={onChangeAge}
-                    onChangeCountry={onChangeCountry}
-                    onChangeCity={onChangeCity}
-                    onChangeCurrency={onChangeCurrency}
-                    onChangeFirstname={onChangeFirstname}
-                    onChangeLastname={onChangeLastname}
-                    isLoading={isLoading}
-                    error={error}
-                    readonly={readonly}
+                <ToggleFeatures
+                    feature="isAppRedesigned"
+                    on={
+                        <ProfileCardRedesigned
+                            onChangeAvatar={onChangeAvatar}
+                            onChangeUsername={onChangeUsername}
+                            data={formData}
+                            onChangeAge={onChangeAge}
+                            onChangeCountry={onChangeCountry}
+                            onChangeCity={onChangeCity}
+                            onChangeCurrency={onChangeCurrency}
+                            onChangeFirstname={onChangeFirstname}
+                            onChangeLastname={onChangeLastname}
+                            isLoading={isLoading}
+                            error={error}
+                            readonly={readonly}
+                        />
+                    }
+                    off={
+                        <ProfileCard
+                            onChangeAvatar={onChangeAvatar}
+                            onChangeUsername={onChangeUsername}
+                            data={formData}
+                            onChangeAge={onChangeAge}
+                            onChangeCountry={onChangeCountry}
+                            onChangeCity={onChangeCity}
+                            onChangeCurrency={onChangeCurrency}
+                            onChangeFirstname={onChangeFirstname}
+                            onChangeLastname={onChangeLastname}
+                            isLoading={isLoading}
+                            error={error}
+                            readonly={readonly}
+                        />
+                    }
                 />
             </VStack>
         </DynamicModuleLoader>
