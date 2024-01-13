@@ -32,10 +32,15 @@ export const ArticleListItemSkeleton = (
     if (view === ArticleView.BIG) {
         return (
             <div
-                className={classNames(cls.ArticleListItem, {}, [
-                    className,
-                    cls[view],
-                ])}
+                className={classNames(
+                    toggleFeatures({
+                        name: "isAppRedesigned",
+                        off: () => cls.ArticleListItem,
+                        on: () => cls.ArticleListItemRedesigned,
+                    }),
+                    {},
+                    [className, cls[view]],
+                )}
             >
                 <Card className={cls.card}>
                     <div className={cls.header}>
