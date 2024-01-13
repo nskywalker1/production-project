@@ -1,6 +1,7 @@
 export enum AppRoutes {
     MAIN = "main",
     ABOUT = "about",
+    SETTINGS = "settings",
     ARTICLES = "articles",
     ARTICLE_DETAILS = "article_details",
     ARTICLE_CREATE = "article_create",
@@ -12,6 +13,7 @@ export enum AppRoutes {
 }
 
 export const getRouteMain = () => "/";
+export const getRouteSettings = () => "/settings";
 export const getRouteAbout = () => "/about";
 export const getRouteForbidden = () => "/forbidden";
 export const getRouteAdmin = () => "/admin";
