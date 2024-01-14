@@ -17,6 +17,9 @@ import cls from "./ArticleDetailsPage.module.scss";
 import { ArticleRating } from "@/features/articleRating";
 import { getFeatureFlag, ToggleFeatures } from "@/shared/features";
 import { Card } from "@/shared/ui/deprecated/Card";
+import { StickyContentLayout } from "@/shared/layouts/StickyContentLayout";
+import { DetailsContainer } from "../../../../pages/ArticleDetailsPage/ui/DetailsContainer/DetailsContainer";
+import { AdditionalInfoContainer } from "../../../../pages/ArticleDetailsPage/ui/AdditionalInfoContainer/AdditionalInfoContainer";
 
 interface ArticleDetailsPageProps {
     className?: string;
@@ -37,25 +40,54 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <Page
-                className={classNames(cls.ArticleDetailsPage, {}, [className])}
-            >
-                <VStack gap="16" max>
-                    <ArticleDetailsPageHeader />
-                    <ArticleDetails id={id} />
-                    <ToggleFeatures
-                        feature="isArticleRatingEnabled"
-                        on={<ArticleRating id={id} />}
-                        off={
-                            <Card>
-                                {t("Скоро буде можливість поставити оцінку")}
-                            </Card>
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={
+                    <StickyContentLayout
+                        content={
+                            <Page
+                                className={classNames(
+                                    cls.ArticleDetailsPage,
+                                    {},
+                                    [className],
+                                )}
+                            >
+                                <VStack gap="16" max>
+                                    <DetailsContainer />
+                                    <ArticleRecommendationsList />
+                                    <ArticleDetailsComments id={id} />
+                                </VStack>
+                            </Page>
                         }
+                        right={<AdditionalInfoContainer />}
                     />
-                    <ArticleRecommendationsList />
-                    <ArticleDetailsComments id={id} />
-                </VStack>
-            </Page>
+                }
+                off={
+                    <Page
+                        className={classNames(cls.ArticleDetailsPage, {}, [
+                            className,
+                        ])}
+                    >
+                        <VStack gap="16" max>
+                            <ArticleDetailsPageHeader />
+                            <ArticleDetails id={id} />
+                            <ToggleFeatures
+                                feature="isArticleRatingEnabled"
+                                on={<ArticleRating id={id} />}
+                                off={
+                                    <Card>
+                                        {t(
+                                            "Скоро буде можливість поставити оцінку",
+                                        )}
+                                    </Card>
+                                }
+                            />
+                            <ArticleRecommendationsList />
+                            <ArticleDetailsComments id={id} />
+                        </VStack>
+                    </Page>
+                }
+            />
         </DynamicModuleLoader>
     );
 };
