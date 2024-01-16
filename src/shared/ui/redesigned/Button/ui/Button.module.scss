@@ -46,6 +46,18 @@
     &:hover {
         border: 2px solid var(--accent-redesigned);
     }
+
+    &.normal {
+        border: 2px solid var(--accent-redesigned);
+    }
+
+    &.success {
+        border: 2px solid var(--save-redesigned);
+    }
+
+    &.error {
+        border: 2px solid var(--cancel-redesigned);
+    }
 }
 
 .square {

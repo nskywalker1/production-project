@@ -50,7 +50,7 @@ export const ProfileCardRedesigned = memo(
 
         if (isLoading) {
             return (
-                <Card padding="24" max>
+                <Card padding="24" max border="partial">
                     <VStack gap="32">
                         <HStack max justify="center">
                             <Skeleton border="100%" width={128} height={128} />
