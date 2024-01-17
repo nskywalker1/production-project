@@ -668,7 +668,7 @@
       "password": "123",
       "features": {
         "isArticleRatingEnabled": false,
-        "isAppRedesigned": true
+        "isAppRedesigned": false
       },
       "roles": [
         "USER"
