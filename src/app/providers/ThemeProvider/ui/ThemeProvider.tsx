@@ -30,6 +30,10 @@ const ThemeProvider = ({ children, initialTheme }: ThemeProviderProps) => {
         [theme],
     );
 
+    useEffect(() => {
+        document.body.className = theme;
+    }, [theme]);
+
     return (
         <ThemeContext.Provider value={defaultProps}>
             {children}

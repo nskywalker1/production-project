@@ -668,13 +668,13 @@
       "password": "123",
       "features": {
         "isArticleRatingEnabled": false,
-        "isAppRedesigned": false
+        "isAppRedesigned": true
       },
       "roles": [
         "USER"
       ],
       "jsonSettings": {
-        "theme": "app_full_dark_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlePageWasOpened": true
