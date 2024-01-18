@@ -11,11 +11,13 @@ import { ToggleFeatures } from "@/shared/features";
 import { MainLayout } from "@/shared/layouts/MainLayout";
 import { PageLoader } from "@/shared/ui/deprecated/PageLoader";
 import { AppLoaderLayout } from "@/shared/layouts/AppLoaderLayout";
+import { useAppToolbar } from "./lib/useAppToolbar";
 
 function App() {
     const { theme } = useTheme();
     const dispatch = useAppDispatch();
     const inited = useSelector(getUserInited);
+    const toolbar = useAppToolbar();
 
     useEffect(() => {
         if (!inited) {
@@ -48,6 +50,7 @@ function App() {
                             header={<Navbar />}
                             content={<AppRouter />}
                             sidebar={<Sidebar />}
+                            toolbar={toolbar}
                         />
                     </Suspense>
                 </div>
