@@ -9,7 +9,7 @@ import {
 import { UserRole } from "@/entities/User";
 
 describe("app/router/AppRouter", () => {
-    test("Страница должна отрендериться", async () => {
+    test("The page should render", async () => {
         ComponentRender(<AppRouter />, {
             route: getRouteAbout(),
         });
@@ -18,7 +18,7 @@ describe("app/router/AppRouter", () => {
         expect(page).toBeInTheDocument();
     });
 
-    test("Страница не найдена", async () => {
+    test("Page not found", async () => {
         ComponentRender(<AppRouter />, {
             route: "/asfasfasfasf",
         });
@@ -27,7 +27,7 @@ describe("app/router/AppRouter", () => {
         expect(page).toBeInTheDocument();
     });
 
-    test("Редирект неавторизованного пользователя на главную", async () => {
+    test("Redirect unauthorized user to home page", async () => {
         ComponentRender(<AppRouter />, {
             route: getRouteProfile("1"),
         });
@@ -36,7 +36,7 @@ describe("app/router/AppRouter", () => {
         expect(page).toBeInTheDocument();
     });
 
-    test("Доступ к закрытой страницы для авторизованного пользователя", async () => {
+    test("Access to a closed page for an authorized user", async () => {
         ComponentRender(<AppRouter />, {
             route: getRouteProfile("1"),
             initialState: {
@@ -48,7 +48,7 @@ describe("app/router/AppRouter", () => {
         expect(page).toBeInTheDocument();
     });
 
-    test("Доступ запрещен (отсутствует роль)", async () => {
+    test("Access denied (no role)", async () => {
         ComponentRender(<AppRouter />, {
             route: getRouteAdmin(),
             initialState: {
@@ -60,7 +60,7 @@ describe("app/router/AppRouter", () => {
         expect(page).toBeInTheDocument();
     });
 
-    test("Доступ разрешен (присутствует роль)", async () => {
+    test("Access allowed (role present)", async () => {
         ComponentRender(<AppRouter />, {
             route: getRouteAdmin(),
             initialState: {
